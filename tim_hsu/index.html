@@ -119,7 +119,7 @@
 	        <h1>Secure Cloud Manager</h1>
 	        
 	        <ul id='main_navigation'>
-	        	<li id='favoriate_button' name='favoriate'>favorite button</li><li name='dashboard'>dashboard</li><li>management</li><li>endpoint</li><li>service</li><li>logs</li><li>reports</li><li>updates</li><li>administration</li>	
+	        	<li  name='favoriate'>favorite button</li><li name='dashboard'>dashboard</li><li>management</li><li>endpoint</li><li>service</li><li>logs</li><li>reports</li><li>updates</li><li>administration</li>	
 	        </ul> 
 	        <ul class='submenus' name='favoriate'>
 	        	<h2>add current page to Favoriates</h2>
@@ -137,16 +137,18 @@
 		  $("#main_navigation li").each(function(index) {
 		  	var name = $(this).attr('name');
 			$(this).hover(function() {
+				
 				$(".submenus").each(function(index) {
 				 	$(this).hide();
 					}
 				);
+				
 				var target  = ".submenus[name="+ name +"]";
 				$(target).show();
 				
 				var original = "#main_navigation li[name=" + name + "]";
-				
 			    var left_of_li = $(original).offset().left;
+			    
 				$(target).css('left', left_of_li);
 			}
 			);

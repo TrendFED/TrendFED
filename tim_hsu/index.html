@@ -11,7 +11,7 @@
         		margin:0;	
         	}
         	#whole_page{
-				width:900px;
+				width:1024px;
 				margin-right:auto;        		
 				margin-left:auto;        		
         	}	
@@ -136,14 +136,17 @@
 		  
 		  $("#main_navigation li").each(function(index) {
 		  	var name = $(this).attr('name');
-		    var left_of_li = $(this).offset().left;
 			$(this).hover(function() {
 				$(".submenus").each(function(index) {
 				 	$(this).hide();
-				}
-			);
-				var target = ".submenus[name="+ name +"]";
+					}
+				);
+				var target  = ".submenus[name="+ name +"]";
 				$(target).show();
+				
+				var original = "#main_navigation li[name=" + name + "]";
+				
+			    var left_of_li = $(original).offset().left;
 				$(target).css('left', left_of_li);
 			}
 			);

@@ -82,7 +82,7 @@
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#961400', endColorstr='#ff9191',GradientType=0 ); /* IE6-9 */
 	
         	}
-        	#favoriates{
+        	.submenus{
         		width:15em;
         		background-color: #b6b6b6;	
         		border-style:solid;
@@ -90,7 +90,7 @@
         		border-width:1px;
         	}
         	/* for rounded corner*/
-        	#favoriates{
+        	.submenus{
 				border-radius: 0px 0px 10px 10px;
 				-moz-border-radius:0px 0px 10px 10px;
 				-webkit-border-radius:0px 0px 10px 10px;
@@ -99,14 +99,18 @@
 				border: 1px solid #333333;
 				background-color: #BBBBBB;
         	}
-        	#favoriates h2{
+        	.submenus h2{
         		font-size:1em;
         		border-bottom-style: solid;
         		border-bottom-width: 1px;
         		border-bottom-color: gray;
         	}
-        	#favoriates li{
+        	.submenus li{
         		list-style: none;
+        	}
+        	
+        	.submenus{
+        		position: absolute;	
         	}
         </style> 
     </head>
@@ -115,36 +119,46 @@
 	        <h1>Secure Cloud Manager</h1>
 	        
 	        <ul id='main_navigation'>
-	        	<li id='favoriate_button' >favorite button</li><li >dashboard</li><li>management</li><li>endpoint</li><li>service</li><li>logs</li><li>reports</li><li>updates</li><li>administration</li>	
+	        	<li id='favoriate_button' name='favoriate'>favorite button</li><li name='dashboard'>dashboard</li><li>management</li><li>endpoint</li><li>service</li><li>logs</li><li>reports</li><li>updates</li><li>administration</li>	
 	        </ul> 
-	        <ul id='favoriates' class='submenus'>
+	        <ul class='submenus' name='favoriate'>
 	        	<h2>add current page to Favoriates</h2>
+	        	<li>Scan now for All Domain </li>	
+	        	<li>Update Server Now</li>	
+	        </ul>
+	        <ul class='submenus' name='dashboard'>
+	        	<h2>dash board function</h2>
 	        	<li>Scan now for All Domain </li>	
 	        	<li>Update Server Now</li>	
 	        </ul>
        </div>
        <script>
-		  $("#favoriates").hide();
 		  
 		  $("#main_navigation li").each(function(index) {
+		  	var name = $(this).attr('name');
+		    var left_of_li = $(this).offset().left;
 			$(this).hover(function() {
 				$(".submenus").each(function(index) {
 				 	$(this).hide();
-				});
+				}
+			);
+				var target = ".submenus[name="+ name +"]";
+				$(target).show();
+				$(target).css('left', left_of_li);
 			}
 			);
 		  });
 		  
-		  $("#favoriate_button").hover(function() {
-			  $("#favoriates").show();
-			  } 
-		  );
+		$(".submenus").each(function(index) {
+		 	$(this).hide();
+		 	$(this).hover(function() {
+				$(this).show()
+			 }, function() {
+				$(this).hide()
+			 });
+		});
+		
 		  
-		  $("#favoriates").hover(function() {
-			  $("#favoriates").show();
-		  }, function() {
-			  $("#favoriates").hide();
-		  });
 		  	
        </script>
     </body>

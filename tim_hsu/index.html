@@ -123,12 +123,57 @@
         	#main_navigation > li:hover ul{
         		display:block;
         	}
+        	h1{
+        		display: inline;	
+        		height: auto;
+        	}
+        	#user_box{
+        		float:right;	
+        		margin-right:10ex;
+        		margin-top:4ex;
+        	}
+        	#user_box span{
+        		position: relative;
+        		bottom: 10px;
+        	}
+        	
+        	#user_box #faq_box {
+        		position: absolute;
+        		display:none;
+        		background-color:gray;
+        		border-color:white;
+        		border-style:solid;
+        		border-width:3px;
+        		-webkit-box-shadow: 0px 8px 12px rgba(50, 50, 50, 0.87);
+				-moz-box-shadow:    0px 8px 12px rgba(50, 50, 50, 0.87);
+				box-shadow:         0px 8px 12px rgba(50, 50, 50, 0.87);
+        	}
+        	#user_box:hover #faq_box {
+        		right:50px;
+        		display: block;
+        		padding:1ex;
+        	}
+        	#faq_box li{
+        		list-style: none;	
+        		color:white;
+        	}
         </style> 
     </head>
     <body>
     	<div id='whole_page'>
-	        <h1>Secure Cloud Manager</h1>
-	        
+    		<img alt='tball' src='image/tball.png'/>
+	        <div id='user_box'>
+	        	<span>User: clark kent</span>
+	        	<span><a>logout</a></span>
+	    		<img alt='help' src='image/help.png'/>
+	    		<div id='faq_box'>
+	    			<ul>
+	    				<li>what's new</li>
+	    				<li>content index</li>
+	    				<li>security info</li>
+    				</ul>	
+	    		</div>
+        	</div> 
 	        <ul id='main_navigation'>
 	        	<li>favorite button
 			        <ul class='submenus' >
@@ -149,13 +194,18 @@
        </div>
        <script>
 		  
-		   $("#main_navigation ul").each(function(index) {
-			     var left_of_li = $(this).parent().offset().left;
-			     $(this).css('left',left_of_li);
-				}
-		   );
-// 		  
- 		
+		   function setup_popup () {
+			   $("#main_navigation ul").each(function(index) { 
+			   		var left_of_li = $(this).parent().offset().left;
+				     $(this).css('left',left_of_li);
+					}
+			   );
+		   };
+		   setup_popup();
+		   $(window).resize(function() {
+		   	setup_popup();	
+		   });
+		   
 		  
 		  	
        </script>

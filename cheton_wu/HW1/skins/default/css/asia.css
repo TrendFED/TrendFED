@@ -1,0 +1,82 @@
+/**************************************************
+Asia language specified styles 
+@app 		WFBS-SVC
+@version	1.0
+@author 	Gail Wang
+@email		gail_wang@trend.com.tw
+@created	2010/03
+**************************************************/
+/**************************************************
+style.css
+**************************************************/
+p{
+	line-height: 14px;
+}
+
+cite.note{
+	line-height: 14px;
+	font-size: 11px;
+	*font-size: 10px;
+	
+}
+
+	
+/**************************************************
+ui_elts.css
+**************************************************/
+.fieldset_common legend{
+	line-height: 14px;
+}
+
+
+/**************************************************
+top_nav.css
+**************************************************/
+.nav {
+	line-height: 14px;
+	*line-height: normal;
+}
+
+.nav_main li a,
+.nav_main li a:link,
+.nav_main li a:visited {
+	*padding: 6px 0 6px 8px;
+}
+
+.nav_main li a span {
+	padding: 6px 20px 7px 12px \9;
+	*padding: 8px 20px 8px 12px;
+}
+
+.nav_main li.hovered .sub_nav,
+.nav_main li.activate .sub_nav {
+	_padding: 6px 20px 8px 12px;
+}
+
+/*REMOVE LATER*/
+.ddm li a,
+.ddm li a:link,
+.ddm li a:visited {
+	*padding: 5px 10px 5px 30px;
+}
+
+
+/**************************************************
+tab.css
+**************************************************/
+.tabNav li span{
+	*padding: 7px 10px 5px 5px; 
+}
+
+
+/**************************************************
+datatable_act_icons.css
+**************************************************/
+.dt_act_icons span{
+	font-size:11px;
+}
+
+.datatable th{
+	white-space: nowrap;
+}
+

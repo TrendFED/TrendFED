@@ -1,0 +1,221 @@
+<html><head>
+<title l10n="PRODUCT_NAME">Trend Micro? Service Conducting Organizer</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta charset="utf-8">
+<!-- COMMON CSS-->
+<link rel="stylesheet" href="../skins/default/css/style.css">
+<link rel="stylesheet" href="../skins/default/css/language.css">
+</head>
+<body class="body_bg" style="">
+<div class="wrapper">
+    <div class="top"><div class="logon_portal"><span id="logon_info">Logged on as: Administrator </span> | <a href="#" id="logoff">Log off</a></div><div class="logon_extra"><p></p></div><h1 class="tm_banner"><span class="product_logo"></span><span class="product_banner"></span><span class="product_powerby float_box_right pad_10"></span></h1></div>
+    <div class="nav" rel="administration">
+		<ul id="nav_main" class="nav_main">
+			<li rev="favorite" class="">
+				<a href="#">Favorite<span class="sub_nav">&nbsp;<img src="../skins/default/images/top_nav_arrow_up.gif" align="absmiddle"></span></a>
+				<ul class="ddm" id="ddm_favorite" style="width: 220px;">
+					<li rev="_favorite_add">
+						<span class="padl_20"></span>
+						<span class="valign_mid">Add current page for Favorites</span>
+						<span class="padr_20"></span>
+					</li>
+					<li rev="_favorite_scan_now">
+						<span class="padl_20"></span>
+						<img src="../skins/default/images/star.png" />
+						<span class="valign_mid">Scan Now for All Domain</span>						
+						<span class="nav_close"></span>
+					</li>
+					<li rev="_favorite_update_now" class="nav_close">
+						<span class="padl_20"></span>
+						<img src="../skins/default/images/star.png" />
+						<span class="valign_mid">Update Server Now</span>
+						<span class="nav_close"></span>
+					</li>
+				</ul>
+			</li>
+			<li rev="dashboard" class="activate"><a href="#">Dashboard</a></li>
+			<li rev="management"><a href="#">Management</a></li>
+			<li rev="endpoints"><a href="#">Endpoints</a></li>
+			<li rev="services"><a href="#">Services</a></li>
+			<li rev="logs"><a href="#">Logs</a></li>
+			<li rev="reports"><a href="#">Reports</a></li>
+			<li rev="updates"><a href="#">Updates</a></li>
+			<li rev="administration"><a href="#">Administration</a></li>
+		</ul>
+	</div>
+    <div class="bc">
+        <p id="breadcrumbs">You are here: Dashboard</p>
+    </div>
+	<div class="popup-menu"></div><div class="arrow"></div>
+    <div class="main_content">
+        <div class="col_1">
+            <div class="main_header">
+                <h1 class="page_title">
+                    <div class="float_box">
+                        <div class="float_box_left">Dashboard</div>
+                    </div>
+                </h1>
+            </div>
+            <div class="col_1_content">
+				<div id="msgbox_area" style="display:none;">
+					<div class="msgbox msgok">
+						<em><span><!--put message here--></span></em>
+					</div>
+				</div>
+                <div class="datatable_border" id="filters" style="display:none;">
+					<table border="0" cellpadding="0" cellspacing="0" class="table_padding">
+	                    <tbody><tr>
+                        	<td>Filters:
+                    	    </td><td><span name="filters-type"><select name="select-type" class="w100p">
+<option value="1">Server</option>
+<option value="2">Desktop</option>
+<option value="all" selected="selected">All Types</option>
+</select></span></td>
+        	                <td><button type="button" class="btn" value="Go" id="btn_go_filters" l10n="COMMON.BTN_GO"></button></td>
+    	                </tr>
+	                </tbody></table>
+				</div>
+              	<div class="datatable_border" id="datatable_view">
+                  	<div class="dt_act_area">
+                        <div class="dt_act_bar">
+                            <ul class="list_dt_act_icons">
+                                <!-- <li><a href="#" class="dt_act_icons new disabled"><span>New</span></a></li> -->
+                                <li class="last_act"><a href="#" class="dt_act_icons delete disabled"><span>Delete</span></a></li>
+                            </ul>
+                        </div>
+						<div class="dt_pgnt_bar">
+                            <div class="dt_act_xtra">
+                                <input name="input_search" type="text" class="input_search txt_disabled" value="Search by account name or email address" l10n="INPUT_SEARCH_ITEMS">
+                                <button class="btn_search" name="btn_search"><span class="btn_search_go"></span></button>
+                                <!--replace class from "btn_search_go" to "btn_search_stop" to switch icon -->
+                            </div>
+                            <div class="dt_pgnt">
+                                <span class="txt_page_records">1 - 25 of 156</span>
+                                <span class="dt_divider"></span>
+                                <button class="btn_pgnt_1st btn_disable" <="" button="" disabled="">
+                                </button><button class="btn_pgnt_prev btn_disable" disabled=""></button>
+                                <span class="txt_goto_page">Page: <input name="input_goto_page" class="input_goto_page" type="text" value="1"> of 7</span>
+                                <button class="btn_pgnt_next"></button>
+                                <button class="btn_pgnt_last"></button>
+                                <span class="dt_divider"></span>
+                                <span class="txt_per_page"><select name="select_per_page" class="select_per_page">
+<option value="25">25</option>
+<option value="50">50</option>
+<option value="100">100</option>
+</select> per page</span>
+                            </div>
+                        </div>
+                    </div>
+	                <span id="default_content"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="datatable"> <thead> <tr>     <th width="13" class="col_first-child"><input type="checkbox" name="check_records"></th>               <th><a href="#" name="dt_th-_id">ID</a><span class="sort_order"></span></th>                    <th><a href="#" name="dt_th-name">Computer Name</a><span class="sort_order"></span></th>                         <th><a href="#" name="dt_th-ipaddr">IP Address</a><span class="sort_order asc"></span></th>                         <th><a href="#" name="dt_th-gid">Group ID</a><span class="sort_order"></span></th>                    <th><a href="#" name="dt_th-type">Type</a><span class="sort_order"></span></th>           </tr> </thead> <tbody>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_1">                   <input type="hidden" name="dt_td-record_1" value="108">     </td>          <td>108</td>          <td>TW-Robert</td>          <td>192.168.1.118</td>          <td>4</td>          <td>Server</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_2">                   <input type="hidden" name="dt_td-record_2" value="88">     </td>          <td>88</td>          <td>TW-Matthew</td>          <td>192.168.1.119</td>          <td>4</td>          <td>Server</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_3">                   <input type="hidden" name="dt_td-record_3" value="72">     </td>          <td>72</td>          <td>TW-James</td>          <td>192.168.1.178</td>          <td>2</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_4">                   <input type="hidden" name="dt_td-record_4" value="151">     </td>          <td>151</td>          <td>TW-Anthony</td>          <td>192.168.1.178</td>          <td>4</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_5">                   <input type="hidden" name="dt_td-record_5" value="55">     </td>          <td>55</td>          <td>TW-Thomas</td>          <td>192.168.1.179</td>          <td>2</td>          <td>Server</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_6">                   <input type="hidden" name="dt_td-record_6" value="86">     </td>          <td>86</td>          <td>TW-Edward</td>          <td>192.168.1.217</td>          <td>5</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_7">                   <input type="hidden" name="dt_td-record_7" value="87">     </td>          <td>87</td>          <td>TW-Daniel</td>          <td>192.168.1.234</td>          <td>2</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_8">                   <input type="hidden" name="dt_td-record_8" value="93">     </td>          <td>93</td>          <td>TW-Jose</td>          <td>192.168.1.242</td>          <td>7</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_9">                   <input type="hidden" name="dt_td-record_9" value="150">     </td>          <td>150</td>          <td>TW-Frank</td>          <td>192.168.1.254</td>          <td>2</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_10">                   <input type="hidden" name="dt_td-record_10" value="38">     </td>          <td>38</td>          <td>TW-Paul</td>          <td>192.168.1.29</td>          <td>10</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_11">                   <input type="hidden" name="dt_td-record_11" value="155">     </td>          <td>155</td>          <td>TW-Charles</td>          <td>192.168.1.4</td>          <td>6</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_12">                   <input type="hidden" name="dt_td-record_12" value="68">     </td>          <td>68</td>          <td>TW-Charles</td>          <td>192.168.1.58</td>          <td>9</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_13">                   <input type="hidden" name="dt_td-record_13" value="129">     </td>          <td>129</td>          <td>TW-Timothy</td>          <td>192.168.1.75</td>          <td>8</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_14">                   <input type="hidden" name="dt_td-record_14" value="10">     </td>          <td>10</td>          <td>TW-Matthew</td>          <td>192.168.1.78</td>          <td>5</td>          <td>Server</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_15">                   <input type="hidden" name="dt_td-record_15" value="7">     </td>          <td>7</td>          <td>TW-Thomas</td>          <td>192.168.1.91</td>          <td>3</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_16">                   <input type="hidden" name="dt_td-record_16" value="53">     </td>          <td>53</td>          <td>TW-Richard</td>          <td>192.168.1.91</td>          <td>3</td>          <td>Server</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_17">                   <input type="hidden" name="dt_td-record_17" value="112">     </td>          <td>112</td>          <td>TW-Kevin</td>          <td>192.168.1.98</td>          <td>8</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_18">                   <input type="hidden" name="dt_td-record_18" value="63">     </td>          <td>63</td>          <td>TW-Robert</td>          <td>192.168.10.109</td>          <td>3</td>          <td>Server</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_19">                   <input type="hidden" name="dt_td-record_19" value="100">     </td>          <td>100</td>          <td>TW-Matthew</td>          <td>192.168.10.111</td>          <td>7</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_20">                   <input type="hidden" name="dt_td-record_20" value="148">     </td>          <td>148</td>          <td>TW-Mark</td>          <td>192.168.10.122</td>          <td>3</td>          <td>Server</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_21">                   <input type="hidden" name="dt_td-record_21" value="71">     </td>          <td>71</td>          <td>TW-Ronald</td>          <td>192.168.10.129</td>          <td>9</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_22">                   <input type="hidden" name="dt_td-record_22" value="57">     </td>          <td>57</td>          <td>TW-Scott</td>          <td>192.168.10.151</td>          <td>6</td>          <td>Desktop</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_23">                   <input type="hidden" name="dt_td-record_23" value="13">     </td>          <td>13</td>          <td>TW-Matthew</td>          <td>192.168.10.151</td>          <td>7</td>          <td>Server</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_24">                   <input type="hidden" name="dt_td-record_24" value="42">     </td>          <td>42</td>          <td>TW-Edward</td>          <td>192.168.10.155</td>          <td>1</td>          <td>Server</td>      </tr>  <tr>     <td class="col_first-child">                       <input type="checkbox" name="check_record_25">                   <input type="hidden" name="dt_td-record_25" value="109">     </td>          <td>109</td>          <td>TW-Paul</td>          <td>192.168.10.167</td>          <td>7</td>          <td>Desktop</td>      </tr>  </tbody> </table></span>
+	                <span id="search_content" style="display: none; "><!-- Search Content --></span>
+                    <div class="dt_act_area btm">
+                        <div class="dt_pgnt_bar">
+                            <div class="dt_pgnt">
+                                <span class="txt_page_records">1 - 25 of 156</span>
+                                <span class="dt_divider"></span>
+                                <button class="btn_pgnt_1st btn_disable" disabled=""></button>
+                                <button class="btn_pgnt_prev btn_disable" disabled=""></button>
+                                <span class="txt_goto_page">Page: <input name="input_goto_page" class="input_goto_page" type="text" value="1"> of 7</span>
+                                <button class="btn_pgnt_next"></button>
+                                <button class="btn_pgnt_last"></button>
+                                <span class="dt_divider"></span>
+                                <span class="txt_per_page"><select name="select_per_page" class="select_per_page">
+<option value="25">25</option>
+<option value="50">50</option>
+<option value="100">100</option>
+</select> per page</span>
+                            </div>
+                        </div>
+                        <div class="dt_act_bar">
+                            <ul class="list_dt_act_icons">
+                                <!-- <li><a href="#" class="dt_act_icons new"><span>New</span></a></li>-->
+                                <li class="last_act"><a href="#" class="dt_act_icons delete disabled"><span>Delete</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+            	</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="footer"><div class="footer_content">Copyrightc 2011. Trend Micro Incorporated. All rights reserved.</div></div>
+
+<script id="loader_template" type="text/x-jquery-tmpl">
+<div class="loader"></div>
+</script>
+
+<script id="empty_template" type="text/x-jquery-tmpl">
+<div class="empty_area"><p>${empty_result}</p></div>
+</script>
+
+<script id="default_template" type="text/x-jquery-tmpl">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="datatable">
+<thead>
+<tr>
+    <th width="13" class="col_first-child"><input type="checkbox" name="check_records" /></th>
+    {{each(i,field) fieldset}}
+    {{if field == sort.field}}
+    {{if sort.order == 0}}
+    <th><a href="#" name="dt_th-${field}">${$item.getFieldValue(field)}</a><span class="sort_order asc"></span></th>
+    {{else}}
+    <th><a href="#" name="dt_th-${field}">${$item.getFieldValue(field)}</a><span class="sort_order desc"></span></th>
+    {{/if}}
+    {{else}}
+    <th><a href="#" name="dt_th-${field}">${$item.getFieldValue(field)}</a><span class="sort_order"></span></th>
+    {{/if}}
+    {{/each}}
+</tr>
+</thead>
+<tbody>
+{{each(i,record) records}}
+<tr>
+    <td class="col_first-child">
+    {{if $item.editable(record)}}
+        {{if $item.checked(record)}}
+        <input type="checkbox" name="check_record_${i+pagination.record_range.from}" checked="checked" />
+        {{else}}
+        <input type="checkbox" name="check_record_${i+pagination.record_range.from}" />
+        {{/if}}
+    {{else}}
+        <input type="checkbox" name="check_record_${i+pagination.record_range.from}" disabled="disabled" />
+    {{/if}}
+    <input type="hidden" name="dt_td-record_${i+pagination.record_range.from}" value="${record._id}" />
+    </td>
+    {{each(j,field) fieldset}}
+    <td>${$item.getRecordFieldValue(record, field)}</td>
+    {{/each}}
+</tr>
+{{/each}}
+</tbody>
+</table>
+</script>
+
+<!--lib JS-->
+<script src="../lib/jquery/jquery-1.4.4.min.js"></script>
+<script src="../lib/jquery/jquery.cookie.p1.js"></script>
+<script src="../lib/jquery/jquery.json-2.2.min.js"></script>
+<script src="../lib/jquery/jquery.tmpl.min.js"></script>
+<script src="../lib/jquery/jquery.checkboxset.min.js"></script>
+<script src="../lib/jquery/jquery.localize.min.js"></script>
+<script src="../lib/jquery/jquery.mockjax.min.js"></script> <!-- FOR NON-PRODUCTION USE -->
+<script src="../lib/jquery/jquery.mockjson.js"></script> <!-- FOR NON-PRODUCTION USE -->
+<script src="../lib/jquery_ui/js/jquery-ui-1.8.4.custom.min.js"></script>
+
+<!--Required JS-->
+<script src="../js/common.js"></script>
+<script src="../js/l10n.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/page_init.js"></script>
+<script src="../js/lang_conf.js"></script>
+<script src="../js/trend/trend.ui.helpers.html.js"></script>
+<script src="../js/trend/trend.ui.controls.pagination.js"></script>
+<script src="../js/trend/trend.ui.controls.search.js"></script>
+<script src="../js-test/mockjax.js"></script> <!-- FOR NON-PRODUCTION USE -->
+
+<!--page JS-->
+<script src="../js/computers.js"></script>
+
+
+
+</body></html>

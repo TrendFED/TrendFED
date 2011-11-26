@@ -1,0 +1,41 @@
+{
+    "response" : {
+        "sort" : {
+            "name" : "account_name",
+            "order" : 1 
+        },
+        "pagination" : {
+            "page_number" : 1,
+            "records_per_page" : 25,
+            "total_pages" : 1,
+            "total_records" : 3,
+            "record_range" : {
+                "from" : 1,
+                "to" : 3 
+            } 
+        },
+        "records" : [
+            {
+                "_id" : 1,
+                "account_name" : "bob_dylan",
+                "account_type" : "admin",
+                "email" : "bob_dylan@trendmicro.com",
+                "status" : 1 
+            },
+            {
+                "_id" : 2,
+                "account_name" : "alice_wang",
+                "account_type" : "user",
+                "email" : "alice_wang@trendmicro.com",
+                "status" : 0 
+            },
+            {
+                "_id" : 3,
+                "account_name" : "josh_lyons",
+                "account_type" : "user",
+                "email" : "josh_lyons@trendmicro.com",
+                "status" : 0 
+            } 
+        ] 
+    }
+}

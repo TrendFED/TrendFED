@@ -1,0 +1,189 @@
+/*********************************************************************
+ * Main Navigation
+ *********************************************************************/
+
+/*** Horizontal Menu ***/
+.nav {
+	height: 33px;
+	background: url(../images/nav_bg.gif) repeat left top; 
+	padding: 0 45px;
+}
+
+.nav_main {
+	background: url(../images/nav_bg.gif) no-repeat left -99px;
+    height: 33px;
+    padding: 0 0 0 2px;
+/*    margin: 0;
+    overflow: hidden;*/
+}
+
+.nav_main li {
+	background:url(../images/nav_bg.gif) no-repeat left top;
+    float:left;
+    display:inline;
+    height:33px;
+}
+
+.nav_main li.hovered{
+	background-position: right -66px;
+}
+
+.nav_main li.hovered a {
+	background-position: right -66px;
+}
+
+.nav_main li.activate{
+	background-position: 0 -33px;
+}
+
+.nav_main li.activate a{
+	background-position: right -33px;
+}
+
+.nav_main li.activate a:hover {
+	background-position: right -33px;
+}
+
+
+.nav_main li a{
+	background: url(../images/nav_btn_right.gif) no-repeat right top;
+    display: block;
+    text-decoration: none;
+    line-height: 33px;
+    font-size: 12px;
+    padding: 0 28px 0 28px;
+	font-weight: 600;
+    color: #fff;
+}
+
+.nav_main li a:link,
+.nav_main li a:visited{
+	color: #fff;
+}
+
+.nav_main li a:hover{
+	background-position:right -66px;
+}
+
+
+/*** Dropdown Menu ***/
+.ddm {
+	z-index: 100;
+	position: absolute;
+	display: none;
+	white-space: nowrap;
+	min-width: 150px;
+	background-image: none;
+	background: #FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#ddd));
+	background: -moz-linear-gradient(top,  #FFF,  #ddd);
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr="#FFFFFF", endColorStr="#dddddd", gradientType="0");
+	border:1px #666 solid;
+	border-width: 0 1px 1px;
+	-moz-border-radius: 7px; 
+    -webkit-border-radius: 7px; 
+	-moz-border-radius-topleft: 0px; 
+	-moz-border-radius-topright: 0px; 
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+}
+
+.ddm li {
+	background-image: none;
+	min-height: 24px;
+	height: 24px;
+	padding: 5px 0 0 0;
+	overflow: hidden;
+	font-weight: normal;
+	float: none;
+	display: block;
+	cursor:pointer;
+	text-align: left;
+}
+
+.ddm li a,
+.ddm li a:link,
+.ddm li a:visited {
+	color: #000; 
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 24px;
+	display: block;
+	height: 24px;
+	background-image: none;
+	padding: 0 15px;
+	cursor: pointer;
+}
+
+.ddm li:hover{
+	background: #cce0f5;
+}
+
+.ddm li:hover span.nav_close{
+	position: absolute;
+	right: 0;
+	background: url(../images/nav_close.png) center left no-repeat;
+	display: inline;
+	width: 24px;
+	height: 24px;
+	vertical-align: top;
+}
+
+span.help-icon {
+	background: url(../images/icon_help.gif) center left no-repeat;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+
+span:hover.help-icon {
+	cursor:pointer;
+}
+
+.popup-menu{
+	padding: 5.5px;
+	/*border: solid 1px #f7f4e8;
+/*	background: #fff;
+	border:1px solid #8db3d4;
+	filter: alpha(opacity=100);*/
+	position: absolute;
+	right: 5px;
+	top: 30px;
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+	cursor:pointer;
+	/* radius */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    /* cross-browser CSS gradient */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#616161', endColorstr='#363636'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#616161), to(#363636)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #616161,  #363636); /* for firefox 3.6+ */
+	/* shadow */
+	-moz-box-shadow:2px 2px 10px #363636;
+	-webkit-box-shadow:2px 2px 10px #363636;
+	box-shadow:2px 2px 10px #363636;
+	
+	z-index: 101;
+}
+
+.arrow {	
+	border: solid 1px #f7f4e8;
+	position: absolute;
+	border-color: transparent transparent #616161;
+	border-style: solid;
+	border-width: 0 10px 10px;
+	height: 0;
+	width: 0;
+	right: 25px;	
+	top: 25px;
+	
+	z-index: 100;
+}
+
+.popup-menu li{
+	padding: 10px;
+}

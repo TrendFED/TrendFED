@@ -1,0 +1,153 @@
+@CHARSET "UTF-8";
+html, body {
+    font: 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+#wrapper {
+    margin: 0 auto;
+    padding: 0 auto;
+    min-width: 960px;
+}
+#header {
+    padding : 30px 20px 30px 20px;
+}
+    #help {
+        float: right;
+    }
+        #help ul li{
+            float: left;
+        }
+    #logo {
+        float: left;
+    }
+    #menu2 {
+        padding-top: 10px;
+    }
+        #menu2 li{
+            padding-left: 6px;
+        }
+
+.clear {clear: both;}
+
+/* Main */
+#menu
+{
+    background: url(../images/nav_bg.png) 0 50% repeat-x;
+    height: 36px;
+}
+#menu .first{
+    width: 30px;
+}
+#menu li
+{
+    background: url(../images/nav_border.png) 0 10% no-repeat;
+    float: left;
+    padding: 8px 0 10px 0;
+    position: relative;
+}
+
+#menu a
+{
+    float: left;
+    height: 33px;
+    padding: 0 25px;
+    color: #fff;
+    text-decoration: none;
+}
+#menu > li:hover{
+    background: url(../images/nav_bg_hover.png) 0 9% repeat-x;
+}
+
+#menu li:hover > ul
+{
+    display: block;
+}
+
+/* Sub-menu */
+#menu ul
+{
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #e4e4e4;
+    width: 230px;
+}
+
+#menu ul li
+{
+    float: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+    #menu ul li{
+        background: none;
+    }
+
+#menu ul a
+{
+    color: #000;
+    border-left: 1px solid #535353;
+    border-right: 1px solid #535353;
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+#menu ul a:hover
+{
+    background: #c3d8f3;
+    border: 1px solid #73a1e1;
+}
+
+#menu ul li:first-child a
+{
+   border-bottom: 1px solid #b3b3b3;
+}
+
+#menu ul li:first-child a:hover:after
+{
+    border-bottom-color: #04acec;
+}
+
+#menu ul li:last-child a
+{
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    border-bottom: 1px solid #535353;
+}
+
+/* Clear floated elements */
+#menu:after
+{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#menu ul li a .star{
+    padding-left: 22px;
+    background: url(../images/star.png) 0% 40% no-repeat;
+}
+#menu ul li a:hover .star{
+    padding-left: 22px;
+    background: url(../images/star_hover.png) 0% 40% no-repeat;
+}
+#menu ul li a .close{
+    display: none;
+}
+#menu ul li a:hover .close{
+    float: right;
+    display: block;
+    margin-left: 30px;
+    background: url(../images/nav_close.png) no-repeat;
+    width: 8px;
+    height: 8px;
+}

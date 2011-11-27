@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>This is title</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  <head>
+  <body>
+    <img src="img/trend.png" alt="T-Ball (no time to make)">
+    <div class="navbar">
+      <ul class="nav">
+        <li><a href="#">&nbsp;</a></li>
+        <li>
+          <a href="#">Dashboard</a>
+          <ul class="submenu">
+            <li><a href="#">Add current page to Favorites</a></li>
+            <li><a href="#">Scan Now for All Domain</a></li>
+            <li><a href="#">Update Server Now</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Managment</a>
+          <ul class="submenu">
+            <li><a href="#">Add current page to Favorites</a></li>
+            <li><a href="#">Scan Now for All Domain</a></li>
+            <li><a href="#">Update Server Now</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Endpoints</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Logs</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Updates</a></li>
+        <li><a href="#">Administration</a></li>
+        <li><a href="#">Endpoints</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
+

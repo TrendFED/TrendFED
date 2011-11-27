@@ -1,0 +1,443 @@
+/**************************************************
+Datatable styles
+@app 		Worry-Free Family
+@version	1.0
+@author 	Gail Wang
+@email		gail_wang@trend.com.tw
+@created	2009/05
+**************************************************/
+
+/* import CSS files */
+@import url("../../../skins/default/css/datatable_act_icons.css");
+
+/**************************************************
+DATATABLE
+**************************************************/
+/*DATATABLE border*/
+.datatable_border{
+	border: 1px solid #b7b7b7;
+	margin-bottom: 10px;
+	*zoom: 1; /*IE6,7*/
+}
+
+/*DATATABLE within a tab*/
+.tabs .datatable_border{
+	border-width: 0;
+	margin: 0;
+}
+
+.dt_title{
+	font-weight: bold;
+	padding: 8px 10px;
+	background: #dcdcdc;	
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#cdcdcd));
+	background: -moz-linear-gradient(top,  #f5f5f5,  #cdcdcd);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#f5f5f5", endColorStr="#cdcdcd", gradientType="0");
+	border: 1px solid #b7b7b7;
+	border-bottom: none;
+	-webkit-border-radius:  4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;	
+	*zoom: 1; /*IE6,7*/
+}
+
+.datatable {
+	border-collapse: collapse;	
+	width: 100%;
+	background:#fff;
+}
+
+.datatable caption {
+	border-bottom: 3px solid #ccc;
+	color: #000;
+	font-weight: bold;
+	text-align: left;
+	padding: 5px 0 5px 5px;
+	margin: 5px 0 0 0;	
+}
+
+.datatable th,
+.datatable td{
+	border-style: solid;
+	padding: 5px;
+	vertical-align:middle;
+	font-size: 11px;
+}
+
+.datatable th{
+	border: 1px solid #b7b7b7;
+	border-width: 0 0 1px 1px ;
+	font-weight: bold;
+	text-align: left;
+	background: #e5effa url(../images/bg_table-header.gif);
+	background: -webkit-gradient(linear, left top, left bottom, from(#eff5fc), to(#cde1f5));
+	background: -moz-linear-gradient(top,  #eff5fc,  #cde1f5);
+}
+
+.datatable th a{
+	color: #000;
+}
+
+.datatable th a:hover{
+	text-decoration: none;
+}
+
+/*.datatable .th_mimic{
+	border-top-width: 1px;
+}*/
+
+.datatable td{
+	border-width:0 0 1px 0;
+	border-color:#dcdcdc;
+	padding: 3px 5px;
+}
+
+.datatable th:first-child, 
+.datatable td:first-child, 
+.datatable .col_first-child{
+	border-left-width:0px;
+}
+
+.datatable th input[type ="checkbox"],
+.datatable td input[type ="checkbox"],
+.datatable th input[type ="radio"],
+.datatable td input[type ="radio"]{
+	width: 13px; 
+	height: 13px;
+	margin: 0;
+	padding: 0;
+}
+
+/*input radio button & checkbox IE6 only*/
+.col_first-child input{
+	_width: 13px; 
+	_height: 13px;
+	margin: 0;
+	padding: 0;
+}
+
+.datatable tr:hover,
+.datatable tr:hover .altrow {
+	background-color: #e5effa;
+}
+
+.datatable .altrow{ 
+	font-weight: bold;
+	background-color: #fefee6;
+}
+
+/*selected row*/
+.datatable .selected {
+	background-color: #cce0f5;
+}
+
+th.col-sortable:hover {
+	cursor: pointer;
+}
+
+/**************************************************
+Action bar (act btns & pagination bars)
+**************************************************/
+.dt_act_area{
+	background-color:#f0f0f0;
+	_zoom: 1; /*IE6*/
+}
+
+.dt_act_bar,
+.dt_pgnt_bar{
+	text-align: left;
+	padding: 5px 10px;
+	font-size: 11px;
+	border: 0px solid #b7b7b7;	
+}
+
+.dt_pgnt_bar{
+	text-align: right;
+	border-width: 1px 0;
+	overflow: hidden;
+	_zoom: 1; /*IE6*/
+}
+
+.dt_pgnt{
+	float: right;
+	padding-top: 2px;
+}
+
+.dt_act_xtra{
+	float: left;
+}
+
+/*Action bar text area*/
+.dt_actbar input{
+	padding:0;
+	margin: 0;
+}
+
+/*Action bar - bottom*/
+.dt_act_area.btm .dt_act_bar{ 
+/*	border-top-width:1px;*/
+}
+
+.dt_act_area.btm .dt_pgnt_bar{ 
+    /*border-top-width: 0;*/
+}
+
+
+.dt_divider{
+	display: inline-block;
+	background: url(../images/line_vertical.gif) center;
+	height: 16px;
+	width: 5px;
+	vertical-align: middle;
+}
+
+/**************************************************
+DATATABLE - pagination 
+**************************************************/
+.btn_pgnt_1st,
+.btn_pgnt_prev,
+.btn_pgnt_next,
+.btn_pgnt_last{
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 17px;
+	height: 17px;
+	vertical-align: middle;
+	background-color: transparent;
+	background-image: url(../images/btn_pgnt.gif);
+	background-repeat: no-repeat; 
+}
+
+.btn_pgnt_1st:hover,
+.btn_pgnt_prev:hover,
+.btn_pgnt_next:hover,
+.btn_pgnt_last:hover{
+	background-position: 0 4px;
+	cursor: pointer;
+}
+
+
+/*first*/
+.btn_pgnt_1st{
+	background-position: 0 4px;
+}
+
+.btn_pgnt_1st:hover,
+.btn_pgnt_1st.hover{
+	background-position: 0 -16px;
+}
+
+.btn_pgnt_1st:active{
+	background-position: 0 -38px;
+	-ms-background-position-x: 1px;
+	-ms-background-position-y: -15px;
+}
+
+.btn_disable.btn_pgnt_1st{
+	background-position: 0 -57px;
+	cursor: default;
+}
+
+/*previous*/
+.btn_pgnt_prev{
+	background-position: -20px 4px;
+}
+
+.btn_pgnt_prev:hover,
+.btn_pgnt_prev.hover{
+	background-position: -20px -16px;
+}
+
+.btn_pgnt_prev:active{
+	background-position: -20px -38px;		
+	-ms-background-position-x: -19px;
+	-ms-background-position-y: -15px;
+}
+
+.btn_disable.btn_pgnt_prev{
+	background-position: -20px -57px;
+	cursor: default;
+}
+
+/*next*/
+.btn_pgnt_next{
+	background-position: -48px 4px;
+}
+
+.btn_pgnt_next:hover{
+	background-position: -48px -16px;
+}
+
+.btn_pgnt_next:active{
+	background-position: -48px -38px;		
+	-ms-background-position-x: -47px;
+	-ms-background-position-y: -15px;
+}
+
+.btn_disable.btn_pgnt_next{
+	background-position: -48px -57px;
+	cursor: default;
+}
+
+/*last*/
+.btn_pgnt_last{
+	background-position: -68px 4px;
+}
+
+.btn_pgnt_last:hover{
+	background-position: -68px -16px;
+}
+
+.btn_pgnt_last:active{
+	background-position: -68px -38px;		
+	-ms-background-position-x: -67px;
+	-ms-background-position-y: -15px;
+}
+
+.btn_disable.btn_pgnt_last{
+	background-position: -68px -57px;
+	cursor: default;
+}
+
+.input_goto_page,
+.select_per_page,
+.txt_page_records{
+.txt_goto_page,
+	font-size: 11px;
+}
+
+.input_goto_page{
+	width:25px;
+	height:18px;
+}
+
+.select_per_page{
+	width:45px;
+	height:18px;
+}
+
+.txt_page_records{
+    /* Single Page: Total: %total_records% */
+    /* Multiple Pages: %from% - %to% of %total_records% */
+}
+
+.txt_goto_page{
+    /* Page: %page% of %total_records% */
+}
+
+img.prev_page, 
+img.next_page {
+/*	padding: 2px;*/
+	cursor: pointer;
+}
+
+
+/**************************************************
+DATATABLE various types
+**************************************************/
+/*DATATABLE without TH*/
+.datatable.woth td {
+	border-width: 0 1px 1px 0;
+}
+
+/*DATATABLE without hover*/
+.datatable td.wohover,
+table.wohover td {
+	background:#fff;
+}
+
+table.woborder td {
+	border:0;
+}
+
+
+/**************************************************
+header bar using table
+**************************************************/
+/*.datatable_header_bar th{
+	vertical-align:middle;
+	text-align:left;
+}
+
+th.table_tl{
+	height:24px;
+	width:3px;
+	background: url(../images/bk_title_left.gif) no-repeat;
+}
+
+th.table_tb{
+	background: url(../images/bk_title_bk.gif) repeat-x;
+}
+
+th.table_tr{
+	background: url(../images/bk_title_right.gif) no-repeat top right;	
+	width:3px;
+}
+
+th.table_tb_titles,
+th.table_tb_bd{
+	padding:0 5px;
+	font-weight:bold;
+}
+
+th.table_tb_bd{
+	font-size:10px;
+	text-align:right;
+	font-weight:normal;
+}*/
+
+th.sortable:hover {
+	cursor: pointer;
+}
+
+
+/**************************************************
+sort order
+**************************************************/
+.datatable .sort_order {
+    padding-left: 10px;
+}
+
+.datatable .sort_order.desc {
+    background-image: url(../images/icon_sort_desc.gif);
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    cursor: pointer;
+}
+
+.datatable .sort_order.asc {
+    background-image: url(../images/icon_sort_asc.gif);
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    cursor: pointer;
+}
+
+/**************************************************
+sorting (used in Computers)
+**************************************************/
+.datatable thead tr .headerSortUp {
+	background-image: url(../images/icon_sort_desc.gif);
+	background-repeat: no-repeat;
+	background-position:  98% center;
+}
+
+.datatable thead tr .headerSortDown {
+	background-image: url(../images/icon_sort_asc.gif);
+	background-repeat: no-repeat;
+	background-position: 98% center;
+}
+
+.datatable .headerSortUp a,
+.datatable .headerSortDown a{ 
+	padding-right: 5px;
+}
+
+
+/**************************************************
+Fix datatable head
+**************************************************/
+/* Firefox has missing border bug! https://bugzilla.mozilla.org/show_bug.cgi?id=410621 */
+/* Firefox 2 */
+html</**/body .datatable, x:-moz-any-link {margin:1px;}
+/* Firefox 3 */
+html</**/body .datatable, x:-moz-any-link, x:default {margin:1px}

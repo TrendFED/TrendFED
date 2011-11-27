@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title l10n="PRODUCT_NAME">Trend Micro&trade; SaaS Support Dashboard</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8"/>
+<meta charset="utf-8" />
+<!-- COMMON CSS-->
+<link rel="stylesheet" href="../skins/default/css/style.css" />
+<link rel="stylesheet" href="../skins/default/css/style_minimal.css" />
+<link rel="stylesheet" href="../skins/default/css/jquery.layout.css" /> 
+<link rel="stylesheet" href="../skins/default/css/logon.css" />
+<link rel="stylesheet" href="../skins/default/css/language.css" />
+</head>
+
+<body class="body_bg">
+<div class="wrapper">
+    <div class="top">
+    	<div class="padl_48">
+            <h1 class="tm_banner">
+                <span class="product_logo"></span>
+                <span class="product_banner"></span>
+                <span class="product_powerby float_box_right pad_10"></span>
+            </h1>
+        </div>
+    </div>
+    <div class="main_content">
+        <div id="logon_content" style="display:none;">
+            <div id="logon_main">
+                <h2 class="header">Logon</h2>
+                <p l10n="">Please type your username and password.</p>
+                <div class="form_content">
+                    <form id="logon_form">
+                    <table border="0" cellpadding="0" cellspacing="0" class="table_padding">
+                        <tr>
+                            <th class="valign_top"><span l10n="">Username:</span></td>
+                            <td><input name="username" type="text" class="w200"><span class="errmsg_inline_below"></span></td>
+                        </tr>
+                        <tr>
+                            <th class="valign_top"><span l10n="">Password:</span></th>
+                            <td><input name="password" type="password" class="w200"><span class="errmsg_inline_below"></span></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><p class="note"><a href="#" id="pwd_forgot_content_link">Forgot password?</a></p>
+                            <p class="note"><input type="checkbox" id="remember_me" name="remember_me" value="true"><label for="remember_me" l10n="">Remember me</label></p></td>
+                        </tr>
+                    </table>
+                    </form>
+                    <div class="form_act">
+                        <button type="button" class="btn" id="btn_logon" l10n="COMMON.BTN_LOGON">Log on</button><span id="loading" class="loading_icon" style="display:none"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="logon_status" style="display:none;">
+                <div class="status_msg statuserr">
+                    <h1 id="logon_errmsg"><!-- Error Message --></h1>
+                </div>
+            </div>
+        </div>
+        <div id="pwd_forgot_content" style="display:none;">
+            <div id="pwd_forgot_main">
+                <h2 class="header" l10n="">Forgot your password?</h2>
+            </div>
+            <div id="pwd_forgot_status">
+                <div class="status_msg statusinfo">
+                    <p l10n="">Please contact the administrator to reset your password.</p>
+                    <p><a href="#" id="logon_content_link"><span l10n="">Return to logon page.</span></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--lib JS-->
+<script src="../lib/jquery/jquery-1.4.4.min.js"></script>
+<script src="../lib/jquery/jquery.cookie.p1.js"></script>
+<script src="../lib/jquery/jquery.json-2.2.min.js"></script>
+<script src="../lib/jquery/jquery.validate.pack.js"></script>
+<script src="../lib/jquery/jquery.localize.min.js"></script>
+<script src="../lib/jquery/jquery.mockjax.min.js"></script> <!-- FOR NON-PRODUCTION USE -->
+<script src="../lib/jquery_ui/js/jquery-ui-1.8.4.custom.min.js"></script>
+<script src="../lib/jquery_ui/js/jquery.layout.min.js"></script>
+
+<!--Required JS-->
+<script src="../js/common.js"></script>
+<script src="../js/l10n.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/lang_conf.js"></script>
+<script src="../js-test/mockjax.js"></script> <!-- FOR NON-PRODUCTION USE -->
+
+<!--page JS-->
+<script src="../js/logon.js" ></script>
+
+</body>
+</html>

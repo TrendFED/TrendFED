@@ -1,0 +1,12 @@
+How to use Github?
+
+Ignore Init and create repo, account...
+
+update method:
+modify or copy files from other folder to git folder [d:\git]
+$ git add .
+$ git commit -a -m "put commit here"
+$ git push
+
+update from source:
+$ git pull

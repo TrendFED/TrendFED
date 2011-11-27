@@ -1,0 +1,66 @@
+/**************************************************
+page styles
+@app 		Worry-Free Family
+@version	1.0
+@author 	Gail Wang
+@email		gail_wang@trend.com.tw
+@created	2010/09
+**************************************************/
+.fixed_height_wyscroll{
+	height: 132px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.add_server_row{
+	margin-bottom: 5px;
+}
+
+.add_container{
+	margin-right: 10px; 
+	float: left
+}
+
+.filter_area{
+	margin: 20px 0 10px 0;
+}
+
+/**************************************************
+rewrite jquery.layout.css
+**************************************************/
+.layout_domain{
+	height: 630px;
+}
+
+.ui-layout-center{
+	border: none;
+}
+
+
+/**************************************************
+title aside 
+**************************************************/
+.title_bg{
+	color: #fff;
+	font-weight: bold;
+	padding: 8px 10px;
+	display: block;
+	background: #B5B5B5; 
+	background: -moz-linear-gradient(top, #B5B5B5 0%, #7F7F7F 51%, #757575 51%, #4F4F4F 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B5B5B5), color-stop(51%,#7F7F7F), color-stop(51%,#757575), color-stop(100%,#4F4F4F)); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B5B5B5', endColorstr='#4F4F4F',GradientType=0 ); 
+	border: 1px solid #b7b7b7;
+	border-bottom: none;
+	-webkit-border-radius:  4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;	
+	*zoom: 1; /*IE6,7*/
+}
+
+h2.title_bg{
+	-webkit-border-radius:  4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border: 1px solid #999;
+	border-bottom: none;
+}
+
+

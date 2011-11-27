@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>New Web Project</title>
+        <script src="script/jquery-1.7.1.js" type="text/javascript" charset="utf-8"></script>
+        <style>
+        	*{
+        		padding:0;
+        		margin:0;	
+        	}
+        	#whole_page{
+				width:1024px;
+				margin-right:auto;        		
+				margin-left:auto;        		
+        	}	
+        	
+        	#main_navigation {
+        		position:relative;
+        		width: 95%;
+        		display:block;
+        		padding: 0.25em;
+        	}
+        	/* for better border style*/
+        	#main_navigation{
+        		border-top-color: black;
+        		border-top-style: solid;
+        		border-top-width: 1px;
+        		
+        		border-bottom-color: black;
+        		border-bottom-style: solid;
+        		border-bottom-width: 1px;
+        	}
+        	/* for gradient*/
+         	#main_navigation {
+        	background: rgb(255,145,145); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(255,145,145,1) 3%, rgba(255,63,63,1) 12%, rgba(204,0,0,1) 71%, rgba(150,20,0,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,rgba(255,145,145,1)), color-stop(12%,rgba(255,63,63,1)), color-stop(71%,rgba(204,0,0,1)), color-stop(100%,rgba(150,20,0,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(255,145,145,1) 3%,rgba(255,63,63,1) 12%,rgba(204,0,0,1) 71%,rgba(150,20,0,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(255,145,145,1) 3%,rgba(255,63,63,1) 12%,rgba(204,0,0,1) 71%,rgba(150,20,0,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(255,145,145,1) 3%,rgba(255,63,63,1) 12%,rgba(204,0,0,1) 71%,rgba(150,20,0,1) 100%); /* IE10+ */
+			background: linear-gradient(top,  rgba(255,145,145,1) 3%,rgba(255,63,63,1) 12%,rgba(204,0,0,1) 71%,rgba(150,20,0,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9191', endColorstr='#961400',GradientType=0 ); /* IE6-9 */
+
+
+        	} 
+        	#main_navigation li{
+        		list-style-type: none;
+        	}
+        	/*to adjust line height*/
+        	#main_navigation > li{
+        		color:#ffd7d4;
+        		padding: inherit;	
+        		display:inline;
+        	}
+        	/*for a beautiful border*/
+        	#main_navigation > li{
+        		
+        		border-right-color: white;
+        		border-right-style:solid;
+        		border-right-width:1px;
+        		
+        		border-left-color: black;
+        		border-left-style: solid;
+        		border-left-width: 1px;
+        		
+        	}
+        	/*for better spacing*/
+        	#main_navigation > li{
+        		padding-top: inherit;	
+        		padding-bottom: inherit;	
+        		padding-left: 1em;	
+        		padding-right: 1em;	
+        	}
+        	
+        	
+        	#main_navigation > li:hover{
+        	background: rgb(150,20,0); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(150,20,0,1) 0%, rgba(204,0,0,1) 29%, rgba(255,63,63,1) 88%, rgba(255,145,145,1) 97%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(150,20,0,1)), color-stop(29%,rgba(204,0,0,1)), color-stop(88%,rgba(255,63,63,1)), color-stop(97%,rgba(255,145,145,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(150,20,0,1) 0%,rgba(204,0,0,1) 29%,rgba(255,63,63,1) 88%,rgba(255,145,145,1) 97%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(150,20,0,1) 0%,rgba(204,0,0,1) 29%,rgba(255,63,63,1) 88%,rgba(255,145,145,1) 97%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(150,20,0,1) 0%,rgba(204,0,0,1) 29%,rgba(255,63,63,1) 88%,rgba(255,145,145,1) 97%); /* IE10+ */
+			background: linear-gradient(top,  rgba(150,20,0,1) 0%,rgba(204,0,0,1) 29%,rgba(255,63,63,1) 88%,rgba(255,145,145,1) 97%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#961400', endColorstr='#ff9191',GradientType=0 ); /* IE6-9 */
+	
+        	}
+        	.submenus{
+        		
+        		width:15em;
+        		margin-top:0.25em;
+        		background-color: #b6b6b6;	
+        		border-style:solid;
+        		border-color:black;
+        		border-width:1px;
+        	}
+        	/* for rounded corner*/
+        	.submenus{
+				border-radius: 0px 0px 10px 10px;
+				-moz-border-radius:0px 0px 10px 10px;
+				-webkit-border-radius:0px 0px 10px 10px;
+				-khtml-border-radius:0px 0px 10px 10px;
+				padding:0px 5px 5px  5px;
+				border: 1px solid #333333;
+				background-color: #BBBBBB;
+        	}
+        	.submenus h2{
+        		font-size:1em;
+        		border-bottom-style: solid;
+        		border-bottom-width: 1px;
+        		border-bottom-color: gray;
+        	}
+        	.submenus li{
+        		list-style: none;
+        		
+        	}
+        	
+        	.submenus{
+        		display:none;
+        		color:black;
+        		position: absolute;
+        		top:1.5em;
+        		z-index:1;
+        		
+        	}
+        	#main_navigation > li{
+        		position: relative;
+        	}
+        	#main_navigation > li:hover .submenus{
+        		display:block;
+        	}
+        	h1{
+        		display: inline;	
+        		height: auto;
+        	}
+        	#user_box{
+        		float:right;	
+        		margin-right:10ex;
+        		margin-top:4ex;
+        		position: relative;
+        	}
+        	#user_box span{
+        		position: relative;
+        		bottom: 10px;
+        	}
+        	
+        	#faq_box{
+        		border:red solid 1px;	
+        		background-color: red;
+        		z-index:2;
+        	}
+        	#user_box #faq_box {
+        		display:none;
+        		background-color:gray;
+        		border-color:white;
+        		border-style:solid;
+        		border-width:3px;
+        		-webkit-box-shadow: 0px 8px 12px rgba(50, 50, 50, 0.87);
+				-moz-box-shadow:    0px 8px 12px rgba(50, 50, 50, 0.87);
+				box-shadow:         0px 8px 12px rgba(50, 50, 50, 0.87);
+        	}
+        	#user_box:hover #faq_box {
+        		position:absolute;
+        		right:30px;
+        		display: block;
+        		padding:1ex;
+        	}
+        	#faq_box li{
+        		list-style: none;	
+        		color:white;
+        	}
+        </style> 
+    </head>
+    <body>
+    	<div id='whole_page'>
+    		<img alt='tball' src='image/tball.png'/>
+	        <div id='user_box'>
+	        	<span>User: clark kent</span>
+	        	<span><a>logout</a></span>
+	    		<img alt='help' src='image/help.png'/>
+    			<ul id='faq_box'>
+    				<li>what's new</li>
+    				<li>content index</li>
+    				<li>security info</li>
+				</ul>	
+        	</div> 
+	        <ul id='main_navigation'>
+	        	<li>favorite button
+			        <ul class='submenus' >
+			        	<h2>add current page to Favoriates</h2>
+			        	<li>Scan now for All Domain </li>	
+			        	<li>Update Server Now</li>	
+			        </ul>
+		        </li>
+	        	<li >dashboard
+			        <ul class='submenus' >
+			        	<h2>dash board function</h2>
+			        	<li>Scan now for All Domain </li>	
+			        	<li>Update Server Now</li>	
+			        </ul>
+		        </li>
+	        	<li>management</li><li>endpoint</li><li>service</li><li>logs</li><li>reports</li><li>updates</li><li>administration</li>	
+	        </ul> 
+       </div>
+       <script>
+		  
+		   
+		  
+		  	
+       </script>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+/**************************************************
+Logon styles 
+@app 		Worry-Free Family
+@version	1.0
+@author 	Gail Wang
+@email		gail_wang@trend.com.tw
+@created	2010/10
+**************************************************/
+.logon_area{
+	margin: 15px 0 10px 0; 
+	overflow: hidden; 
+	_zoom: 1; /*IE6*/
+}
+
+.logon_msg,
+.logon_item,
+.logon_act{
+	float: left;
+}
+
+.logon_msg{
+	margin-left: 10px; 
+	width: 300px;
+	padding-top: 13px;
+}
+
+.logon_item{
+	padding-right: 5px;
+}
+
+.logon_act{
+	padding-top: 11px;
+    position: relative;
+}
+
+.loading_icon{
+	background-image: url(../images/loading.gif);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+.form_content{
+	margin: 20px 0;
+}
+
+.pwd_msg{}
+
+.form_act{
+	margin-top: 20px;
+}
+
+.captcha_area{
+	padding-top: 3px;
+}
+
+.img_captcha{
+	border: 1px solid #bbb;
+}
+
+.img_refresh{
+	vertical-align: bottom;
+}

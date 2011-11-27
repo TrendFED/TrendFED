@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+ *
+ */
+body {
+	font-family: Arial;
+	font-size: 12px;
+}
+.header {
+	padding: 0px 26px;
+}
+.loginCredential {
+	float: right;
+	line-height: 64px;
+	vertical-align: middle;
+}
+.loginCredential .loginName {
+	line-height: normal;
+	padding-right: 8px;
+}
+.loginCredential .loginOut {
+	line-height: normal;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-left: 1px solid #000;
+}
+.loginCredential .loginOut a.loginOutLink {
+	color: 0066cc;
+	cursor: pointer;
+}
+.loginCredential .loginOut a.loginOutLink:hover {
+	color: ff0000;
+}
+.loginCredential .helpIcon {
+	position: relative;
+	line-height: normal;
+	vertical-align: middle;
+	padding-left: 2px;
+	padding-right: 2px;
+	cursor: pointer;
+}
+.loginCredential .helpIcon .helpMenuContainer {
+	display: none;
+	line-height: normal;
+}
+.loginCredential .helpIcon:hover .helpMenuContainer,
+.loginCredential .helpIcon .helpMenuContainer:hover {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: -102px;
+	padding-top: 12px;
+	background-image: url(../images/helpMenuDecorator.png);
+	background-position: 0px 12px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+.loginCredential .helpIcon .helpMenu {
+	border: 1px solid #aaaaaa;
+	border-top: 0px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-top: 21px;
+	padding: 0px 2px 2px 2px;
+}
+.loginCredential .helpIcon .helpMenuItem {
+	width: 112px;
+	background: #494949;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: 1px solid #42739e;
+	border-right: 1px solid #42739e;
+}
+.loginCredential .helpIcon .helpMenuItem:last-child {
+	border-bottom: 1px solid #42739e;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.loginCredential .helpIcon .helpMenuItem:hover {
+	background: #909090;
+}
+.loginCredential .helpIcon .helpMenuItem .helpMenuItemLink {
+	line-height: 22px;
+	cursor: pointer;
+	color: #ffffff;
+	text-decoration: none;
+}
+.loginCredential .certificateIcon {
+	line-height: normal;
+	vertical-align: middle;
+	padding-left: 2px;
+	padding-right: 2px;
+	cursor: pointer;
+}
+.mainNav {
+	background:url(../images/nav_bg_body.gif) repeat-x left top;
+	height:33px;
+	padding:0px 25px;
+}
+.mainNav .mainNavItems {
+	background:url(../images/nav_bg.gif) no-repeat left -99px;
+    height:33px;
+	margin:0 0px;
+    padding:0 0 0 2px;
+}
+.mainNav .mainNavItems .mainNavItem {
+	float: left;
+	position: relative;
+}
+.mainNav .mainNavItems .mainNavItem .mainNavItemSpan {
+}
+.mainNav .mainNavItems .mainNavItem .mainNavItemSpan .mainNavItemSpanLink {
+	color:#fff;
+    display:block;
+    font-weight:bold;
+    line-height:33px;    
+    padding:0 22px 0 22px;
+    text-decoration:none;    
+	vertical-align: middle;
+}
+.mainNav .mainNavItems .mainNavItem .mainNavSubItems {
+	display: none;
+}
+.mainNav .mainNavItems .mainNavItem .mainNavItemSpan:hover + .mainNavSubItems,
+.mainNav .mainNavItems .mainNavItem .mainNavSubItems:hover {
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}

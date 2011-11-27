@@ -1,0 +1,53 @@
+.NavBar
+{
+	width: 100%;
+	display:block;
+	position:absolute;
+	top:70px;
+	left:5px;
+	background:url('NavBar_Background.png');
+	background-repeat:repeat-x; 
+}
+.NavItem
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	color:rgb(255,255,255);
+	font-weight:bold;
+	font-size: 13px;
+	height:33px;
+	position:relative;
+	left:-2px;
+	top:-22px;
+}
+.NavItem:hover
+{
+	background:url('NavBar_Background_Hover.png');
+	background-repeat:repeat-x; 
+}
+.NavItemInside
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	color:rgb(255,255,255);
+	font-weight:bold;
+	font-size: 13px;
+	
+	position:relative;
+	top:10px;
+}
+.TopRight
+{
+	position:relative;
+	top:10px;
+	font-size: 13px;
+	vertical-align: middle;
+	float:right;
+}
+.Title
+{
+	display:block;
+	width:100%;
+	vertical-align: middle;
+}
+

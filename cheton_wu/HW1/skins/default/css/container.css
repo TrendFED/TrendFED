@@ -1,0 +1,265 @@
+/**************************************************
+Container styles
+@app 		Worry-Free Family
+@version	1.0
+@author 	Gail Wang
+@email		gail_wang@trend.com.tw
+@created	2009/02
+@modified	2010/10
+**************************************************/
+html, body {}
+
+.body_bg{}
+
+.wrapper{   
+	margin: 0 auto;
+	min-width: 1350px;
+}
+
+.wrapper_lightbox{
+	margin: 0;
+}
+
+.wrapper_content{}
+
+.top{
+/*	padding: 0 10px 0 45px;*/
+}
+
+.main_content{
+	padding: 0 45px 15px 45px;
+	margin: 0;
+}
+
+.wrapper_lightbox .main_content{
+	padding: 10px;
+}
+
+.col_1{
+/*	float: left;
+	width: 690px;*/
+	margin:0;
+	padding:0;
+}
+
+.col_1_content{
+	overflow: hidden;
+	_zoom: 1; /*IE6*/
+}
+
+.col_aside{
+	float: left;
+	width: 180px;
+	margin-right: -100%;
+	position: relative; /*FF - unclickable bug*/
+}
+.col_aside_content{
+	
+}
+.col_section{
+	float: left;
+	width: 100%;
+}
+
+.col_section_content{
+	margin-left: 180px;
+	padding-left: 10px;
+}
+
+.footer{		
+	background:url("../images/footer_bg.gif") repeat-x scroll left top transparent;
+	clear:both;
+	height:47px;
+}
+
+.footer_content{
+	padding-top:22px;
+    text-align:center;
+    color:#979696;
+}
+
+.btm_btn_area{
+	padding-top:15px;
+}
+
+.wrapper_lightbox .btm_btn_area{
+	position: absolute;
+	padding: 8px 0;
+	background: #f5f5f5;
+	border-top: 1px solid #ccc;
+	width: 100%;
+	_width: 104%; /*IE6*/
+	bottom: 0;
+	right: 0;
+	text-align: right;
+}
+
+.wrapper_lightbox .btnSet1{
+	padding: 0 10px;
+}
+
+.wrapper_popup{
+	min-width: 590px;  
+	width: auto!important;
+	width: 590px;
+	padding: 15px; 
+}
+
+
+/**************************************************
+general content setup (banner, help, etc)
+**************************************************/
+.tm_banner{
+	margin:0;
+	height: 60px;
+	cursor: default;
+	padding: 0 0 0 45px;
+}
+
+.tm_banner a{
+	text-decoration: none;
+}
+
+/*.tm_banner .banner_img{	
+	background:url(../images/banner_product.gif) no-repeat;
+	display:block; 
+	width: 750px; 
+	height: 60px;
+}*/
+
+.product_logo{
+	background:url(../images/product_logo.gif) no-repeat;
+	width: 115px; 
+	height: 60px;
+	display: inline-block;
+}
+
+.product_banner{
+	background:url(../images/product_banner.gif) no-repeat;
+	width: 450px; 
+	height: 60px;
+	display: inline-block;
+}
+
+.product_powerby{
+	background:url(../images/product_powerby.gif) no-repeat;
+	width: 120px; 
+	height: 60px;	
+	display: inline-block;
+}
+
+/*top banner welcome/logout info*/
+/*.tm_banner i{
+	font-style:normal;
+	position:absolute;
+	top:5px;
+	right:10px;
+	line-height:16px;
+	font-weight: normal;
+}*/
+
+.logon_portal{
+	text-align: right;
+	font-size: 11px;
+	color: #666;
+	background: #f4f4f4;
+	border-bottom: 1px solid #c2c2c2;
+	padding: 5px 10px;
+}
+
+.logon_portal span{
+	padding: 0 5px;
+}
+
+.logon_portal select{
+	font-size: 11px;
+}
+
+.logon_extra{
+	position: absolute;
+	top: 7px;
+	left: 10px;
+	font-size: 11px;
+	color: #666;
+}
+
+.main_header{
+	margin-bottom: 20px;
+	padding: -10px;
+}
+
+.col_section .main_header{
+	margin-bottom: 10px;
+}
+
+.wrapper_lightbox .main_header{
+	margin-bottom: 0;
+}
+
+
+.bc{
+	font-size: 11px;
+	padding: 10px 45px 15px 45px;
+	background:url("../images/bg_top.gif") repeat-x scroll left top transparent;
+}
+
+h1.page_title{
+	border-bottom: 2px solid #CC1414;
+	font-size: 16px;
+}
+
+.col_section h1.page_title{
+	border-bottom: 1px solid #c2c2c2;
+	font-size: 12px;
+}
+
+.page_title .float_box_left{
+	line-height: 22px;
+}
+
+.col_1 .page_title .float_box_left{
+	/*width: 850px;*/
+	width: 95%;
+}
+
+/*.col_1_content_right .page_title .float_box_left{
+	width: 650px;
+}*/
+
+.wrapper_popup .page_title .float_box_left{
+	width: 560px;
+}
+
+.page_title .float_box_right{
+	padding-top:1px;
+}
+
+.wrapper_lightbox .page_title{
+	color: #fff;
+	border: none;
+	font-weight: bold;
+	padding: 8px 10px;
+	background: #6c6c6c;	
+	background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#6c6c6c));
+	background: -moz-linear-gradient(top,  #cccccc,  #6c6c6c);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#cccccc", endColorStr="#6c6c6c", gradientType="0");
+/*	border: 1px solid #b7b7b7;
+	border-bottom: none;
+	-webkit-border-radius:  4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;	*/
+	*zoom: 1; /*IE6,7*/
+
+}
+
+
+.help_icon{
+	background: url(../images/icon_help.gif) no-repeat;
+	width:18px;
+	height:18px;
+	display:block;
+}
+
+.main_header p.main_desc{
+	margin:10px 0 0 0;
+	line-height:14px;
+}

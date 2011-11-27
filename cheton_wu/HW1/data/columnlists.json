@@ -1,0 +1,16 @@
+{
+    "response" : {
+        "fieldset" : [
+            "modification.datetime",
+            "publish.datetime",
+            "expiration.datetime",
+            "service",
+            "data_center",
+            "region",
+            "event_type",
+            "modification.account.name",
+            "severity",
+            "status"
+        ]
+    }
+}

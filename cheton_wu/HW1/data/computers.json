@@ -1,0 +1,125 @@
+{
+    "response": {
+        "sort" : {
+            "name" : "id",
+            "order" : 1 
+        },
+        "pagination" : {
+            "page_number" : 1,
+            "records_per_page" : 25,
+            "total_pages" : 1,
+            "total_records" : 10,
+            "record_range" : {
+                "from" : 1,
+                "to" : 10 
+            } 
+        },
+        "records": [
+            {
+                "ipaddr": "127.0.0.1",
+                "gid": 1,
+                "type": 2,
+                "_id": "01",
+                "name": "computer_ec9ae925-3b8b-47b9-baa6-f674249d9cd9" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 1,
+                "type": 1,
+                "_id": "02",
+                "name": "computer_b4629f58-2c87-435c-94a3-15442ff6686f" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 1,
+                "type": 1,
+                "_id": "03",
+                "name": "computer_d9e4d05c-4ece-4692-a628-e93365d57499" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 1,
+                "type": 2,
+                "_id": "04",
+                "name": "computer_597c1a6b-26cc-44c8-919e-5a92dd0ce1a0" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 1,
+                "type": 2,
+                "_id": "05",
+                "name": "computer_d3b2ae81-c986-42eb-afed-98392cc7313a" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 1,
+                "type": 2,
+                "_id": "06",
+                "name": "computer_1c9c2f89-2f2a-463a-b388-9f57d6154e48" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 1,
+                "type": 1,
+                "_id": "07",
+                "name": "computer_e7141aeb-bdb2-4e48-95e6-5764ea6b4ddf" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 1,
+                "type": 2,
+                "_id": "08",
+                "name": "computer_9c9727f4-8fea-46c7-be7d-7c376e8fcc79" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 1,
+                "type": 1,
+                "_id": "09",
+                "name": "computer_22738dfc-e9e0-4027-8fae-5134f8f6dead" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 2,
+                "type": 1,
+                "_id": "10",
+                "name": "computer_97c77d13-58a3-4ad5-b46e-e955cba23aaf" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 2,
+                "type": 2,
+                "_id": "11",
+                "name": "computer_5de6562e-8521-497d-a4d1-bfc4e8013492" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 2,
+                "type": 1,
+                "_id": "12",
+                "name": "computer_4e17239e-6409-414f-b0c3-6a8ffd14eb76" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 2,
+                "type": 1,
+                "_id": "13",
+                "name": "computer_27ed01cd-76db-46bd-a293-4134d78c726d" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 2,
+                "type": 1,
+                "_id": "14",
+                "name": "computer_5045aef4-6e6d-44ec-81f9-d353a7a9b2fd" 
+            },
+            {
+                "ipaddr": "0.0.0.0",
+                "gid": 2,
+                "type": 2,
+                "_id": "15",
+                "name": "computer_6eb6a7fa-a89b-44de-b6d1-e2857139b2e7" 
+            } 
+        ] 
+    } 
+}

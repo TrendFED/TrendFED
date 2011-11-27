@@ -1,0 +1,693 @@
+/**************************************************
+RTL 
+@app 		WFBS-SVC
+@version	1.0
+@author 	Gail Wang
+@email		gail_wang@trend.com.tw
+@created	2010/02
+**************************************************/
+/**************************************************
+style.css
+**************************************************/
+/*html, body {
+	direction: rtl; 
+}*/
+
+.rtl input[type ="checkbox"],
+.rtl input[type ="radio"]{
+	margin: 0px 0px 0px 5px;
+}
+
+.rtl .align_right{ 
+	text-align: left!important;
+}
+
+.rtl .table_padding{
+/*	text-align: right;*/
+}
+
+.rtl .table_padding th{
+	padding:3px 0 3px 3px;	
+	text-align: right;
+}
+
+.rtl .list_bullet li{
+	margin: 0 15px 0 0;
+}
+
+.rtl .list_icon_arrow li{
+	padding: 0 15px 0 0;
+	background:url(../images/bullet_arrow_rtl.gif) no-repeat right 2px;
+}
+
+.rtl .list_num li{
+	list-style: decimal;
+	margin: 0 25px 0 0;
+	line-height: 16px;
+}
+
+.rtl .list_inline li{
+	display: inline;
+	padding: 0 5px 0 0;
+}
+
+.rtl .padr_2{
+	padding-left: 0;
+}
+
+.rtl .padr_5{
+	padding-right: 0;
+	padding-left: 5px;
+}
+
+.rtl .padl_15{
+	padding-right: 15px;
+	padding-left: 0;
+}
+
+.padl_20{
+	padding-right: 20px;
+	padding-left: 0;
+}
+
+.rtl cite.note em{
+	padding-right: 0;
+	padding-left: 5px;
+}
+
+.rtl .dir_ltr{
+	direction: ltr;
+	text-align: right;
+}
+
+
+/**************************************************
+container.css
+**************************************************/
+.rtl .logon_portal{
+	text-align: left;
+}
+
+.rtl .tm_banner{
+	padding: 0 20px 0 0;
+}
+
+.rtl .float_box_left{
+	float: right;
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+.rtl .float_box_right{
+	float: left;	
+}
+
+.rtl .col_1_content_left{
+	float: right;
+	width:180px;
+}
+
+.rtl .col_1_content_right{
+	float: left;
+}
+
+.rtl .btnSet1{ 
+	margin: 0 0 0 15px;
+	*margin: 0;
+}
+
+/**************************************************
+ui_elts.css
+**************************************************/
+.rtl .msgbox h1{
+	background-position: right top;
+}
+
+.rtl .msgbox em{
+	background-position: right top;
+}
+
+.rtl .fieldset_common .float_box input{
+	margin: 0 0 0 5px;
+}
+
+.rtl .legend{
+	text-align: left;
+}
+
+.rtl .legend ul.comp_type li,
+.rtl .legend ul.status li,
+.rtl .legend ul.va_lv li{
+	background-position: top right;
+	margin: 0 0 0 3px;
+}
+
+.rtl .legend ul.comp_type li{
+	padding: 2px 18px 2px 0;
+	*padding: 2px 0 2px 18px;
+}
+
+.rtl .legend ul.status li{
+	padding: 0 15px 0 0;
+	*padding: 0 0 0 13px;
+}
+
+.rtl .legend ul.va_lv li{
+	padding: 0 47px 0 0;
+	*padding: 0 0 0 45px;
+}
+
+.rtl .all_expanded,
+.rtl .all_collapsed {
+	background-position: center right;
+	padding: 0 16px 0 0;
+}
+
+.rtl .steps_area{
+	right: auto;
+	left: 20px;
+}
+
+.rtl .steps{
+	*margin: 0 5px 0 0;
+}
+
+.rtl .activate_agents .wrapper{
+	background-position: right top;
+}
+
+
+/**************************************************
+top_nav.css
+**************************************************/
+.rtl .nav_main {
+	padding: 0 20px 0 0;
+}
+
+.rtl .nav_main li {
+	float: right;
+}
+
+.rtl .nav_main li a,
+.rtl .nav_main li a:link,
+.rtl .nav_main li a:visited {
+	*padding: 7px 0px 7px 8px;
+}
+
+.rtl .nav_main li a span {
+	*padding: 7px 12px 7px 20px;  	
+}
+
+.rtl .nav_main li.pipe{	
+	float: right;
+}
+
+.rtl .nav_main li a span img {
+	padding: 0 0 0 5px;
+}
+
+.rtl .ddm {
+	right: 0px;
+}
+
+.rtl .ddm li a,
+.rtl .ddm li a:link,
+.rtl .ddm li a:visited {
+	padding: 5px 30px 5px 10px;
+}
+
+
+/**************************************************
+datatable.css
+**************************************************/
+.rtl .dt_actbar{
+	text-align: right;
+}
+
+.rtl .datatable th{
+	border-width:0 1px 1px 0;
+	text-align: right;
+}
+
+.rtl .datatable .th_mimic{
+	border-top-width: 1px;
+}
+
+.rtl .datatable td{
+	border-width: 0 1px 1px 0;
+}
+
+.rtl .datatable_header_bar th{
+	text-align: right;
+}
+
+.rtl th.table_tl{
+	background: url(../images/bk_title_right.gif) ;
+}
+
+.rtl th.table_tr{
+	background: url(../images/bk_title_left.gif);	
+}
+
+.rtl th.table_tb_bd{
+	text-align: left;
+}
+
+.rtl .datatable.woth td {
+	border-width: 0 0 1px 1px;
+}
+
+.rtl table.woborder td {
+	border:0;
+}
+
+
+/**************************************************
+datatable_act_icons.css
+**************************************************/
+.rtl .dt_act_icons{
+	padding: 0px 19px 0px 0px;	
+}
+
+.rtl .list_dt_act_icons li{
+	background-position: left;
+	padding: 0 0 0 12px;
+	margin: 0 0 0 2px;
+	float: right;
+	*padding: 0 12px 0 0;
+	*margin:0 2px 0 0;
+	*float: none;
+}
+
+.rtl .list_action{
+	background:#fff url(../images/bg_action_panel_rtl.gif) repeat-y top right;
+}
+
+.rtl .list_action .dt_act_icons{
+	padding: 0 25px 0 0;
+}
+
+.rtl .menu_button span{
+	padding: 0 0 0 10px;
+	background-position: left;
+	*padding: 0 10px 0 0;
+}
+
+.rtl .menu_button.disabled span{
+	background-position: left;
+	padding: 0 0 0 10px;
+	*padding: 0 10px 0 0;
+}
+
+.btn_list_panel{	
+	filter: DropShadow(Color=#d9d9d9, OffX=-3, OffY=3, Positive=1); 
+	padding:0 0 3px 3px;
+}
+
+.rtl .dt_act_icons.woicon{
+	background-position:right -42px;
+}
+
+/*Add*/
+.rtl .dt_act_icons.add{
+	background-position:right -23px;
+}
+
+/*Add Group*/
+.rtl .dt_act_icons.addgroup{
+	background-position:right -61px;
+}
+
+/*Add Computer*/
+.rtl .dt_act_icons.addcomp{
+	background-position:right -898px;
+}
+
+/*Clean*/
+.rtl .dt_act_icons.clean{
+	background-position:right -99px;
+}
+
+/*Configure*/
+.rtl .dt_act_icons.conf{
+	background-position:right -137px;
+}
+
+/*Customize*/
+.rtl .dt_act_icons.custom,
+.rtl .dt_act_icons.update{
+	background-position:right -175px;
+}
+
+/*Download*/
+.rtl .dt_act_icons.download{
+	background-position:right -212px;
+}
+
+/*Edit*/
+.rtl .dt_act_icons.edit{
+	background-position:right -252px;
+}
+
+/*Copy*/
+.rtl .dt_act_icons.copy{
+	background-position:right -289px;
+}
+
+/*Export*/
+.rtl .dt_act_icons.export{
+	background-position:right -327px
+}
+
+/*Import*/
+.rtl .dt_act_icons.import{
+	background-position:right -365px
+}
+/*Move*/
+.rtl .dt_act_icons.move{
+	background-position:right -403px;
+}
+
+/*Move Down*/
+.rtl .dt_act_icons.movedown{
+	background-position:right -441px;
+}
+
+/*Move Up*/
+.rtl .dt_act_icons.moveup{
+	background-position:right -478px;
+}
+
+/*Delete*/
+.rtl .dt_act_icons.delete{
+	background-position:right -517px;
+}
+
+/*Reset*/
+.rtl .dt_act_icons.reset{
+	background-position:right -555px;
+}
+
+/*Reorder*/
+.rtl .dt_act_icons.reorder{
+	background-position:right -592px;
+}
+
+/*Scan*/
+.rtl .dt_act_icons.scan{
+	background-position:right -631px;
+}
+
+/*Stop Scan*/
+.rtl .dt_act_icons.scanstop{
+	background-position:right -860px;
+}
+
+/*Enable Real-time Scan*/
+.rtl .dt_act_icons.realtime_scan{
+	background-position:right -944px;
+}
+
+/*Send*/
+.rtl .dt_act_icons.send{
+	background-position:right -669px;
+}
+
+/*New*/
+.rtl .dt_act_icons.new{
+	background-position:right -706px;
+}
+
+/*Log*/
+.rtl .dt_act_icons.log{
+	background-position:right -745px;
+}
+
+/*Alert*/
+.rtl .dt_act_icons.alert{
+	background-position:right -783px;
+}
+
+/*Others*/
+.rtl .dt_act_icons.others{
+	background-position:right -822px;
+}
+
+/*Rename*/
+.rtl .dt_act_icons.rename{
+	background-position:right -920px;
+}
+
+
+
+/**************************************************
+ad.css
+**************************************************/
+.rtl .ad_btn{
+	right: 875px;
+}
+.rtl .list_ad li{
+	padding: 0 0 0 30px;
+	*padding-right: 30px;
+}
+
+.list_ad li.last_ad{
+	padding-left: 0;
+	*padding-right: 0;
+}
+
+/**************************************************
+tab.css
+**************************************************/
+.rtl .tabNav li{
+	float: right;
+	padding: 6px 5px 6px 0;
+	background: url(../images/tabNav_off_right_rtl.gif) no-repeat top right;
+	margin: 0 0 0 2px;
+}
+
+.rtl .tabNav li span{
+	padding: 6px 5px 6px 10px;
+	*padding: 6px 10px 6px 5px;
+	background: url(../images/tabNav_off_left_rtl.gif) no-repeat top left;	
+}
+
+.rtl .tabNav li.selected{
+	background: url(../images/tabNav_on_right_rtl.gif) no-repeat top right;	
+}
+
+.rtl .tabNav li.selected span{	
+	background: url(../images/tabNav_on_left_rtl.gif) no-repeat top left;
+}
+
+
+/**************************************************
+cm.css
+**************************************************/
+.rtl .ui-layout-center{
+	border-width: 0 1px 0 0;
+}
+
+.rtl .ui-layout-east{
+	border:0px solid #ccc;
+	border-width: 0 0 0 1px;
+	background: #fff;
+	padding: 5px;
+	overflow: auto;
+	overflow-x: hidden!important;
+}
+
+.rtl .ui-layout-toggler{
+	position: static!important;
+	margin-top: 100px!important;
+
+}
+
+.rtl .ui-layout-toggler-open { 
+	background: url(../images/tree_themes/wfbsh30/toggle-rt.gif) no-repeat center bottom;
+}
+
+.rtl .ui-layout-toggler-closed { 
+	background: url(../images/tree_themes/wfbsh30/toggle-lt.gif) no-repeat center bottom;
+}
+
+.rtl .ui-layout-toggler-open:hover { 
+	background: url(../images/tree_themes/wfbsh30/toggle-rt_hover.gif) no-repeat center bottom;
+}
+
+.rtl .ui-layout-toggler-closed:hover { 
+	background: url(../images/tree_themes/wfbsh30/toggle-lt_hover.gif) no-repeat center bottom;
+}
+
+
+/**************************************************
+cm_ss_leftmenu.css
+**************************************************/
+.rtl .ss_menu li.selected {
+	background: #d1dad4 url(../images/left_navi_arrow_rtl.gif) no-repeat left center;
+}
+
+.rtl .tree .tree-wfbsh30 li a {
+	overflow: visible;
+	text-overflow: clip; 
+	-moz-binding: none;
+}
+
+
+/**************************************************
+livestatus.css
+**************************************************/
+.rtl .status_light {
+	float: right;
+	margin-right:20px;
+}
+
+.rtl .status_info {
+	float: right;
+}
+
+.rtl .status_title {
+	float: right;
+}
+
+.rtl .status_arrow {
+	float: left;
+}
+
+.rtl div.body {
+	padding: 0 50px 25px 25px;
+}
+
+.rtl div.body_left {
+	float: right;
+}
+
+.rtl div.body_right {
+	float: right;
+	margin: 0 -1px 0 0;
+	_margin: 0 -2px 0 0;
+}
+
+.rtl .item_active {
+	border-width: 1px 1px 1px 0;
+}
+
+.rtl li.menu_item a,
+.rtl li.menu_item a:link,
+.rtl li.menu_item a:visited {
+	padding: 6px 25px 6px 5px;
+	display: block;
+	color: #333;
+	background-repeat: no-repeat;
+	background-position: right 5px;
+	text-decoration: none;
+	_height: 10px; /*IE6 display bug*/
+}
+
+.rtl ul.widget_msg {
+	margin: 0 15px 15px 0;
+}
+
+
+/**************************************************
+jquery.fancybox.css
+**************************************************/
+.rtl div#fancy_close {
+	left: -15px;
+	right:auto
+}
+
+
+/**************************************************
+calendar.css
+**************************************************/
+.rtl .ui-datepicker-trigger{
+	padding-right: 2px;
+	padding-left: 0;
+}
+
+.rtl .hasDatepicker{
+	text-align: right;
+}
+
+
+/**************************************************
+whatsnew.css
+**************************************************/
+.rtl .whatsnew .btm_btn_area{
+	right: 20px
+}
+
+.rtl .list_whatsnew li.ft_01{
+	background-position: right 0;
+}
+
+.rtl .list_whatsnew li.ft_02{
+	background-position: right 0;
+}
+
+.rtl .list_whatsnew li.ft_03{
+	background-position: right 0;
+}
+
+.rtl .dl_whatsnew{
+	margin: 0 90px 0 0;
+}
+
+
+/**************************************************
+steps.css
+**************************************************/
+.rtl .step_ts_toolbar li{
+	margin:0 0 0 5px;
+	float: right;
+}
+
+
+/**************************************************
+download/css/common.css
+**************************************************/
+.rtl cite.note em{
+	padding: 0 0 0 5px;	
+}
+
+.rtl .list_bullet li{
+	margin: 0 15px 0 0;
+}
+
+.rtl .list_num li{
+	margin: 0 25px 0 0;
+}
+
+.rtl .list_inline li{
+	padding: 0 5px 0 0;
+}
+
+.rtl .status_msg{
+	background-position: right top;
+}
+
+
+/**************************************************
+download/css/activation_client.css
+**************************************************/
+.rtl .title div,
+.rtl .title h2{
+	padding: 20px;
+}
+
+.rtl .copyright{
+	padding-left: 0;
+	padding-right: 20px;
+}
+
+.rtl .content_complete{
+	background: url(../../../images/screenshot_bss.jpg) no-repeat top right; 
+	padding: 50px 300px 0 0;
+
+}
+
+.rtl .tm_banner{
+	background-position: right;
+}
+

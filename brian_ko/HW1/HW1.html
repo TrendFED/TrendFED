@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
+<title>ETP-HW1</title>
+<style type="text/css" media="screen">
+.banner {
+	height: 54px;
+	border:1px dashed black;
+	display: block;
+	padding: 0 0 0 0;
+	white-space: nowrap;
+}
+.banner_img {
+	border: 2px dotted red;
+}	
+.banner_title{
+	z-index: 100;
+	height: 56px;
+	margin: 0 0 0 0;
+	border: 2px dotted red;
+	font-size: 36px;
+	font-family:"Arial Black";
+	font-weight:500;
+	display: inline;
+	vertical-align: top;
+	letter-spacing: 2px;
+}
+.user_profile{
+	height: 20px;
+	display: inline;
+	font-size: 12px;
+	font-family:"Arial Black";
+	font-weight:100;
+	margin: 0 0 0 100px;
+}
+.help_button{
+	height: 20px;
+	width: 20px;
+	display: inline;
+	margin: 0 0 0 0;
+}
+.clip_button{
+	height: 20px;
+	width: 20px;
+	display: inline;
+}
+.menu_table{
+	width: 100%;
+	display:block;
+	padding: 0 0 0 48px;
+	margin: 0 0 0 0;
+	border-top:groove 2px black;
+	border-bottom:groove 2px black;
+	
+}
+.favorite_button{
+	height:48px;
+	width:48px;
+	margin: 0 0 0 0;
+}
+
+.Info_submenu{
+	display:inline;
+	position: relative;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+.Info_submenu div {
+	display:none;
+	position: absolute;
+	margin: 0 0 0 0;
+	background-color: rgb(0%,0%,0%);
+	background-color: rgba(0%,0%,0%,0.8);
+	color: white;
+	border:outset 2px white;
+}
+.Info_submenu li {
+	list-style: none;
+}
+.Info_submenu:hover div{
+	display:block;
+	position: absolute;
+	top:15px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="Menu.css"/>
+</head>
+<body style="margin: 0 0 0 0;">
+<div class="banner">
+	<img src="http://tw.trendmicro.com/images/common/logo_tagline_09.gif" alt="sorry" class="banner_img"/>
+	<div style="display:inline; width:600px;">
+		<div class="banner_title">Cloud Guardian</div>
+	</div>
+	<div class="user_profile">User: Mayuresh Ektare | <a href="">Logout</a></div> 
+	<div class="Info_submenu"><img class="help_button" src="images_question.jpg" alt="Q"/>
+		<div><ul>
+			<li>What's New</li>
+			<li>Content and Index</li>
+			<li>knowledge Base</li>
+			<li>Security Info</li>
+			<li>Sales</li>
+			<li>Support</li>
+			<li>About</li>
+		</ul></div>
+	</div>
+	<img class="clip_button" src="images_clipboard.jpg" alt="C"/>
+</div>
+<div class="menu">
+	<table class="menu_table" summary="Application Menu">
+		<tr>
+			<td><img class="favorite_button" src="images_star.png" alt="F"/>
+				<div class="favorite_submenu"><ul>
+				   <li>Add Current Page to Favorite</li>
+				   <li><img src="images_star.png" alt="F" style="height:20px; width:20px"/>Scan Now for All Domain</li>
+				   <li><img src="images_star.png" alt="F" style="height:20px; width:20px"/>Update Server Now</li>
+				</ul></div>
+			</td>
+			<td>Dashboard</td><td>Management</td><td>Endpoints</td><td>Services</td><td>Logs</td><td>Reports</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>

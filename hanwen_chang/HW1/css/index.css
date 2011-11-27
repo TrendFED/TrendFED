@@ -112,6 +112,7 @@ body {
 	border-bottom-right-radius: 5px;
 	margin-top: 21px;
 	padding: 0px 2px 2px 2px;
+	background: #ffffff;
 }
 .loginCredential .helpIcon .helpMenuItem {
 	width: 112px;
@@ -150,7 +151,7 @@ body {
 .mainNav {
 	background:url(../images/nav_bg_body.gif) repeat-x left top;
 	height:33px;
-	padding:0px 25px;
+	padding:0px 25px;	
 }
 .mainNav .mainNavItems {
 	background:url(../images/nav_bg.gif) no-repeat left -99px;
@@ -159,19 +160,30 @@ body {
     padding:0 0 0 2px;
 }
 .mainNav .mainNavItems .mainNavItem {
-	float: left;
+    background:url(../images/nav_bg.gif) no-repeat left top;
+    float:left;   
+    height:33px;
 	position: relative;
+}
+.mainNav .mainNavItems .mainNavItem:hover {
+	background-position:right -66px;
 }
 .mainNav .mainNavItems .mainNavItem .mainNavItemSpan {
 }
 .mainNav .mainNavItems .mainNavItem .mainNavItemSpan .mainNavItemSpanLink {
-	color:#fff;
+	background:url(../images/nav_btn_right.gif) no-repeat right top;
+    color:#fff;
     display:block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;	
     font-weight:bold;
     line-height:33px;    
     padding:0 22px 0 22px;
     text-decoration:none;    
-	vertical-align: middle;
+}
+.mainNav .mainNavItems .mainNavItem:hover .mainNavItemSpan .mainNavItemSpanLink,
+.mainNav .mainNavItems .mainNavItem .mainNavItemSpan .mainNavItemSpanLink:hover {
+	background-position:right -66px;	
 }
 .mainNav .mainNavItems .mainNavItem .mainNavSubItems {
 	display: none;
@@ -179,8 +191,7 @@ body {
 .mainNav .mainNavItems .mainNavItem .mainNavItemSpan:hover + .mainNavSubItems,
 .mainNav .mainNavItems .mainNavItem .mainNavSubItems:hover {
 	display: block;
-	position: relative;
-	top: 0px;
-	left: 0px;
+	position: absolute;
 	z-index: 10;
+	white-space: nowrap;
 }

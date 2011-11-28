@@ -1,0 +1,46 @@
+/**************************************************
+Minimal styles (e.g. Logon)
+@app 		Worry-Free Family
+@version	1.0
+@author 	Gail Wang
+@email		gail_wang@trend.com.tw
+@created	2010/10
+**************************************************/
+
+/*overwrite container styles*/
+.body_bg{
+	background: #c8c8c8 no-repeat;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#c8c8c8)) no-repeat #c8c8c8;
+	background: -moz-linear-gradient(top,  #ffffff 20%,  #c8c8c8 80%) no-repeat #c8c8c8;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#ffffff", endColorStr="#c8c8c8", gradientType="0");
+}
+
+.wrapper{}
+
+.top{
+	background: #fff;
+/*	padding: 15px 0px;*/
+	border-bottom: 2px solid #CC1414;
+}
+
+.top_content{
+	width: 880px;
+	margin: 0 auto;
+}
+
+.main_content{
+	padding: 40px 0 20px 0;
+	margin: 0 auto;
+	width: 600px;
+}
+
+.tm_banner{
+	padding:0;
+}
+
+.header{
+	font-size: 22px; 
+	font-weight: normal; 
+	margin-bottom: 10px;
+}
+

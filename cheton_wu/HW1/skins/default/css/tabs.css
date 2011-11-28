@@ -1,0 +1,111 @@
+/**************************************************
+Tab styles
+@app 		Worry-Free Family
+@version	1.0
+@author 	Gail Wang
+@email		gail_wang@trend.com.tw
+@created	2009/02
+@modified   2010/09
+**************************************************/
+
+/* import CSS files */
+@import url("../../../skins/default/css/jquery_ui/jquery-ui-1.8.4.custom.css");
+
+
+.tabs.ui-widget-content {
+	border:none;
+}
+
+.tabs.ui-tabs{
+	padding:0px;
+	background:#f0f0f0;
+}
+.tabs .ui-widget-header {	
+	background:none;
+	background:FFF;		
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#cdcdcd));
+	background: -moz-linear-gradient(top,  #f5f5f5,  #cdcdcd);
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr="#f5f5f5", endColorStr="#cdcdcd", gradientType="0");
+	border:1px #b7b7b7 solid;	
+	-moz-border-radius:0px;
+	-webkit-border-radius: 0px;
+	border-bottom:1px #999999 solid;	
+}
+
+.panel_space{
+	height:5px;
+	border:1px solid #b7b7b7;
+	border-top:none;
+	background:#f0f0f0;
+}
+.tabs .ui-widg
+et-content.ui-tabs-panel .panel_container{
+	border-top:3px solid #e0e0e0;
+	padding:10px;
+	display:inline-block;
+	width:100%;
+	text-align:center;
+}
+.tabs .ui-widget-content.ui-tabs-panel {
+	border: 1px solid #b7b7b7;
+	margin-top: 0px;	
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	padding: 0px;
+	border-top: none;
+	overflow: hidden;
+	background: #fff;
+	zoom: 1/*IE6 bug*/
+}
+
+.tabs.ui-tabs .ui-tabs-nav {
+	padding: 5px 5px 0 5px;
+}
+
+.tabs.ui-tabs .ui-tabs-nav li {
+	margin-right: 5px;
+	paddding-right:
+}
+
+.tabs .ui-state-default, 
+.tabs .ui-widget-content .ui-state-default, 
+.tabs .ui-widget-header .ui-state-default{	
+	border-color: #999999;
+	background:none;
+}
+.tabs .ui-state-active, 
+.tabs .ui-widget-content .ui-state-active, 
+.tabs .ui-widget-header .ui-state-active{
+	border:1px solid #999999;	
+	font-weight:bold;
+	background:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #FFF,  #f0f0f0);
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr="#FFFFFF", endColorStr="#f0f0f0", gradientType="0");
+	
+}
+
+.tabs .ui-jqgrid.ui-corner-all {
+	-moz-border-radius:0px;
+	-webkit-border-radius: 0px; 
+}
+
+.tabs .ui-widget-content .ui-th-column{
+	background:#e7e5e6;
+	color:#000000;	
+	vertical-align:top;
+}
+
+.tabs_content{
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+

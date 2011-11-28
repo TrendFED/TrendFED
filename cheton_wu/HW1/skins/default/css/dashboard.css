@@ -1,0 +1,101 @@
+/**************************************************
+page styles
+@app 		Worry-Free Family
+@version	1.0
+@author 	Gail Wang
+@email		gail_wang@trend.com.tw
+@created	2010/10
+**************************************************/
+
+.col_aside{
+	width: 250px;
+	margin: 0 0 0 -250px;
+}
+
+.col_section{
+}
+
+.col_section_content{
+	margin: 0 250px 0 0;
+	padding: 0 10px 0 0;
+}
+
+.width_full{
+	margin-right: 25px;
+}
+
+.dl_db_aside{
+	border: 1px solid #999;
+	_zoom: 1; /*IE6 display bug*/
+}
+
+.dl_db_aside dt{
+	font-weight: bold;
+	background: #f0f0f0;
+	padding: 5px 8px;
+	border: 1px solid #ccc;
+	border-width: 1px 0;
+}
+
+.dl_db_aside dd{
+	padding: 10px 8px 15px 8px;
+	border-top: 2px solid #f0f0f0;
+}
+
+/*toggler*/
+.toggle_aside_open,
+.toggle_aside_close{
+	display: inline-block;
+	position: absolute;
+	top: 2px;
+	right: 5px;
+	background:url(../images/toggler.gif) no-repeat 0 0;
+	width: 19px;
+	height: 26px;
+}
+
+.toggle_aside_open{
+	background-position: 0 -104px;
+}
+
+a:hover.toggle_aside_open{
+	background-position: 0 -130px;
+}
+
+.toggle_aside_close{
+	background-position: 0 0;
+}
+
+a:hover.toggle_aside_close{
+	background-position: 0 -30px;
+}
+
+
+
+/**************************************************
+title aside 
+**************************************************/
+.title_bg{
+	color: #fff;
+	font-weight: bold;
+	padding: 8px 10px;
+	display: block;
+	background: #B5B5B5; 
+	background: -moz-linear-gradient(top, #B5B5B5 0%, #7F7F7F 51%, #757575 51%, #4F4F4F 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B5B5B5), color-stop(51%,#7F7F7F), color-stop(51%,#757575), color-stop(100%,#4F4F4F)); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B5B5B5', endColorstr='#4F4F4F',GradientType=0 ); 
+	border: 1px solid #b7b7b7;
+	border-bottom: none;
+	-webkit-border-radius:  4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;	
+	*zoom: 1; /*IE6,7*/
+}
+
+h2.title_bg{
+	-webkit-border-radius:  4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border: 1px solid #999;
+	border-bottom: none;
+}
+
+

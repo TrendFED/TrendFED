@@ -1,0 +1,72 @@
+/**************************************************
+Calendar styles
+@app 		WFBS-SVC
+@version	1.0
+@author 	Gail Wang
+@email		gail_wang@trend.com.tw
+@created	2009/05
+**************************************************/
+
+/* import CSS files */
+@import url("../../../skins/default/css/jquery_ui/jquery-ui-1.8.4.custom.css");
+
+/*
+ * re-write jQuery UI CSS
+ */
+.ui-datepicker-trigger{
+	padding-left: 2px;
+	cursor: pointer;
+	width: auto;
+	height: auto;
+}
+
+/*.ui-datepicker .ui-datepicker-header { 
+	height: 19px;
+}
+
+.ui-datepicker th { 
+	color: #d0532f;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover { 
+	background: #d75c09;
+	cursor:pointer;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button { 
+	border-color:#999;  
+}
+
+.ui-priority-secondary, 
+.ui-widget-content .ui-priority-secondary { 
+	opacity: 1; 
+	filter:Alpha(Opacity=100); 
+	font-weight: normal;
+}
+
+.ui-datepicker-row-break {
+	height: 0;
+}*/
+
+
+/*IE6 inherit bugs*/
+/*a:hover.ui-state-hover { 
+	_color: #ffffff;
+}
+
+.ui-datepicker-today a:hover.ui-state-hover,
+.ui-datepicker-current-day a:hover.ui-state-hover{
+	_color: #333;
+}
+*/
+
+
+
+
+
+
+
+
+
+

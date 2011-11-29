@@ -1,0 +1,178 @@
+@import url('reset.css');
+
+html, body {
+    font-size: 12px;
+    height: 100%;
+}
+
+* { 
+    outline: none; 
+}
+
+#header {
+    height: 65px;
+}
+#header #logo {
+    background: url('../images/banner.png') 28px 15px no-repeat;
+    width: 400px;
+    height: 65px;
+    display: inline-block;
+}
+#header #logon {
+    float: right;
+    margin: 30px 20px 0 0;
+    font-size: 11px;
+    width: auto;
+}
+#header #logon .user {
+    margin-right: 5px;
+	float: left;
+}
+#header #logon .icon {
+    display: block;
+    float: right;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    margin-bottom: 6px;
+    cursor: pointer;
+    margin-left: 3px;
+}
+#header #logon .icon.help {
+    background: url('../images/icon_help.png') no-repeat;
+}
+#header #logon .icon.document {
+    background: url('../images/icon_document.png') no-repeat;
+}
+#header #logon .submenu .arrow {
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    background: url('../images/arrow.png') no-repeat;
+    z-index: 10;
+    top: 4px;
+    right: 19px;
+}
+#header #logon .submenu {
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: -20px;
+    border: 0px solid #00f;
+    cursor: default;
+}
+#header #logon .submenu ul {
+    background: url('../images/submenu_bg.png') 0 100% no-repeat;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 4px #000;
+    border-radius: 6px;
+    width: 135px;
+    height: 160px;
+    padding-top: 6px;
+    z-index: 9;
+    margin-top: 19px;
+}
+#header #logon .submenu ul li {
+    padding: 0 0 0 11px;
+    line-height: 22px;
+}
+#header #logon .submenu ul li a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+#header #logon .icon:hover .submenu {
+    display: block;
+}
+#nav {
+    height: 33px;
+    line-height: 33px;
+    background: url('../images/navigation_bg.png') repeat-x;
+}
+#nav ul > li {
+    float: left;
+    position: relative;
+}
+#nav ul > li:hover {
+    background: url('../images/nav_btn_hover.png') repeat-x;
+}
+#nav ul > li:first-child {
+    background: none;
+}
+#nav ul > li:hover ol {
+    display: block;
+}
+#nav ul > li img {
+    margin-top: 6px;
+    padding-bottom: 10px;
+}
+#nav ul > li > a {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding: 0 13px;
+    background: url('../images/nav_btn_border.png') right 0 no-repeat;
+    text-decoration: none;
+}
+#nav ul > li:first-child a {
+    cursor: default;
+}
+#nav ol {
+    position: absolute;
+    display: none;
+    width: 200px;
+    border: 1px solid #666;
+    margin: 0 0 0 -2px;
+    padding: 6px 0;
+    box-shadow: 0px 2px 5px #999;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #e6e6e6;
+}
+#nav ol li{
+    padding-top: 8px;
+}
+#nav ol li:first-child {
+    padding-top: 0;
+    padding-bottom: 8px;
+    background: url('../images/nav_line.png') 0 100% repeat-x;
+}
+#nav ol li a {
+    display: block;
+    font-weight: normal;
+    color: #000;
+    padding: 0 6px 0 30px;
+    height: 22px;
+    line-height: 22px;
+    background: url('../images/bookmark-star-filled.png') 6px 0px no-repeat;
+    text-decoration: none;
+}
+#nav ol li:first-child a {
+    padding: 0 6px;
+    background: none;
+}
+#nav ol li a:hover {
+    background: #cce0f5 url('../images/bookmark-star-filled_hover.png') 5px -1px no-repeat;
+    padding: 0 5px 0 29px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #7fb2e5;
+}
+#nav ol li:first-child a:hover {
+    line-height: 20px;
+    padding: 0 5px;
+    height: 20px;
+    background: #cce0f5;
+}
+#nav ol li a .close {
+    display: none;
+}
+#nav ol li a:hover .close {
+    background: url('../images/nav_close.png') no-repeat;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-top: 6px;
+}

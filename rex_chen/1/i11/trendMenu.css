@@ -1,0 +1,53 @@
+/* common */
+.clearfix{zoom:1;}
+.clearfix:after{content:'.';display:block;clear:both;visibility:hidden;height:0;font-size:0;}
+a{color:#0066cc;}
+
+
+/* #trendMenu */
+#trendMenu .hd .logo{float:left;margin:12px 0 0 28px;}
+#trendMenu .hd .logo .trendmicro{float:left;border-right:1px solid #bebebe;padding:0 10px 0 0;margin:0 10px 0 0;background:url(logo_trend.jpg) no-repeat;width:106px;height:39px;}
+#trendMenu .hd .logo .scloud{float:left;background:url(logo_product.jpg) no-repeat;width:237px;height:26px;margin:11px 0 0 0;}
+#trendMenu .hd .option{float:right;margin:21px 21px 0 0;font-size:11px;}
+#trendMenu .hd .option .user{float:left;border-right:1px solid #000;padding:0 7px 0 0;margin:3px 7px 0 0;}
+#trendMenu .hd .option .logout{float:left;margin:3px 11px 0 0;}
+#trendMenu .hd .option .help{float:left;margin:0 6px 0 0;position:relative;}
+#trendMenu .hd .option .help:hover .help_panel{display:block;}
+#trendMenu .hd .option .help a.link{display:block;width:16px;height:16px;background:url(icon_help.jpg) no-repeat;}
+#trendMenu .hd .option  .arrow{width:20px;height:23px;padding-top:4px;position:absolute;top:-16px;right:18px;background:url(bg_help_arrow.jpg) 0 4px no-repeat;}
+#trendMenu .hd .option  .help_panel{display:none;position:absolute;top:30px;right:-20px;}
+#trendMenu .hd .option  .help_panel table{width:150px;}
+#trendMenu .hd .option  .help_panel table .tl{width:10px;height:9px;background:url(bg_help_tl.jpg) no-repeat;}
+#trendMenu .hd .option  .help_panel table .tm{height:9px;background:url(bg_help_tm.jpg) repeat-x;}
+#trendMenu .hd .option  .help_panel table .tr{width:10px;height:9px;background:url(bg_help_tr.jpg) no-repeat;}
+#trendMenu .hd .option  .help_panel table .ml{width:10px;background:url(bg_help_ml.jpg) repeat-y;}
+#trendMenu .hd .option  .help_panel table .mr{width:10px;background:url(bg_help_mr.jpg) repeat-y;}
+#trendMenu .hd .option  .help_panel table .bl{width:10px;height:9px;background:url(bg_help_bl.jpg) no-repeat;}
+#trendMenu .hd .option  .help_panel table .bm{height:9px;background:url(bg_help_bm.jpg) repeat-x;}
+#trendMenu .hd .option  .help_panel table .br{width:10px;height:9px;background:url(bg_help_br.jpg) no-repeat;}
+#trendMenu .hd .option  .help_panel table .mm{background:url(bg_help_mm.jpg) top repeat-x;padding:5px 8px;}
+#trendMenu .hd .option  .help_panel table .mm a{display:block;line-height:1.6;color:#fff;font-weight:bold;text-decoration:none;font-size:12px;}
+#trendMenu .hd .option .doc{float:left;width:16px;height:16px;background:url(icon_doc.jpg) no-repeat;}
+#trendMenu .bd{margin-top:12px;height:33px;background:url(bg_menu.jpg) repeat-x;}
+#trendMenu .navigation{margin:0 0 0 26px;background:url(bg_menu_split.jpg) left no-repeat;padding:0 0 0 2px;}
+#trendMenu .navigation .menu{float:left;background:url(bg_menu_split.jpg) right no-repeat;padding:0 2px 0 0;position:relative;}
+#trendMenu .navigation .menu:hover .panel{display:block;}
+#trendMenu .navigation .menu a.item{display:block;color:#fff;text-decoration:none;font-size:13px;font-weight:bold;height:24px;padding:9px 15px 0;background:url(bg_menu.jpg) repeat-x;}
+#trendMenu .navigation .menu a.item:hover{background:url(bg_menu_hover.jpg) repeat-x;}
+#trendMenu .navigation .menu a.item.star{width:48px;height:30px;background:url(btn_star.jpg) no-repeat;padding:0;margin:1px 0 2px 0;}
+#trendMenu .navigation .menu a.item.star:hover{background-image:url(btn_star_hover.jpg);}
+#trendMenu .navigation .menu .panel{position:absolute;left:-3px;top:33px;display:none;width:800px;}
+#trendMenu .navigation .menu table .mm{background:#dedede;}
+#trendMenu .navigation .menu table .mm .first{margin:0 0 4px 0;padding:0 0 4px 0;background:url(bg_panel_split.jpg) bottom repeat-x;}
+#trendMenu .navigation .menu table .mm a{color:#000;text-decoration:none;font-size:12px;line-height:1.5;display:block;border:1px solid #dedede;padding:0 7px;margin:3px 0;}
+#trendMenu .navigation .menu table .mm a:hover{border:1px solid #7fb2e5;background:#cce0f5;}
+#trendMenu .navigation .menu table .mm a.star{padding:0 7px 0 26px;background:url(icon_star.jpg) 5px center no-repeat;}
+#trendMenu .navigation .menu table .mm a.star:hover{background:url(icon_star_hover.jpg) 5px center no-repeat #cce0f5;}
+#trendMenu .navigation .menu table .mm a.star:hover .close{background:url(icon_close.jpg) no-repeat}
+#trendMenu .navigation .menu table .mm a.star .text{float:left;cursor:pointer;}
+#trendMenu .navigation .menu table .mm a.star .close{float:right;width:8px;height:8px;margin:5px 0 0 10px;cursor:pointer;}
+#trendMenu .navigation .menu table .ml{width:3px;background:url(bg_menu_ml.jpg) repeat-y;}
+#trendMenu .navigation .menu table .mr{width:3px;background:url(bg_menu_mr.jpg) repeat-y;}
+#trendMenu .navigation .menu table .footer {height:11px;background:url(bg_menu_bm.jpg) repeat-x;}
+#trendMenu .navigation .menu table .footer .bl{float:left;width:10px;height:11px;background:url(bg_menu_bl.jpg) no-repeat;}
+#trendMenu .navigation .menu table .footer .br{float:right;width:10px;height:11px;background:url(bg_menu_br.jpg) no-repeat;}

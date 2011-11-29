@@ -1,8 +1,8 @@
 /* common */
+html, body {min-width:1024px;}
 .clearfix{zoom:1;}
 .clearfix:after{content:'.';display:block;clear:both;visibility:hidden;height:0;font-size:0;}
 a{color:#0066cc;}
-
 
 /* #trendMenu */
 #trendMenu .hd .logo{float:left;margin:12px 0 0 28px;}

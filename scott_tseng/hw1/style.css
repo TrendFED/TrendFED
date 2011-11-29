@@ -1,0 +1,60 @@
+@import url('./reset.css');
+
+body {
+  font: 12px Arial;
+  height: 100%;
+}
+
+div.navbar {
+  height: 33px;
+  background: url('./img/navbar.png') repeat-x
+}
+
+ul.nav {
+  padding-left: 0px;
+  list-style: none;
+}
+
+ul.nav > li {
+  height: 33px;
+  line-height: 33px;
+  position: relative;
+  float: left;
+  padding: 0px 1em 0px 1em;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #800;
+}
+
+ul.nav > li > a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+ul.nav > li:hover > ul.submenu {
+  display: block;
+}
+
+ul.submenu {
+  display: none;
+  padding: 0em 0.5em 0em 0.5em;
+  position: absolute;
+  left: -1px;
+  top: 33px;
+  width: 200px;
+  list-style: none;
+  background-color: #e6e6e6;
+  border: 1px solid #666;
+  box-shadow: 0px 2px 5px #999;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+ul.submenu > li {
+}
+
+ul.submenu > li > a {
+  color: black;
+  text-decoration: none;
+}
+

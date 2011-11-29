@@ -1,0 +1,271 @@
+/**************************************************
+Datatable Action Bar styles (action buttons, menu buttons)
+@app 		Worry-Free Family
+@version	1.0
+@author 	Gail Wang
+@email		gail_wang@trend.com.tw
+@created	2009/02
+@modified	2009/07
+**************************************************/
+
+/**************************************************
+DATATABLE action bar icons
+**************************************************/
+/*regular state icons*/
+.dt_act_icons{
+	background: url(../images/icons_dt_action_sprite.gif) no-repeat 0 0;
+	padding: 0px 0 0px 19px;
+	line-height: 16px;
+	min-height: 17px;
+	height:auto!important;
+	height:17px;
+	display: inline-block;
+	/*float: left;*/
+}
+
+/*text link style*/
+a.dt_act_icons/*,
+a:link.dt_act_icons,
+a:visited.dt_act_icons*/{
+	color: #000;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+/*regular state text*/
+.dt_act_icons span{
+/*	font-size:10px;
+	font-weight:bold;*/
+	white-space: nowrap;
+}
+
+/*disable state icons*/
+.dt_act_icons.disabled{
+	background: url(../images/icons_dt_action_sprite_disabled.gif) no-repeat 0 0;
+	cursor:default;
+}
+
+/*disabled icon text*/
+.dt_act_icons.disabled span{
+	color: #999;
+	background: none !important;
+	padding-right: 0 !important;/**/
+}
+
+
+/*action icons list*/
+.list_dt_act_icons li{
+	background: url(../images/line_vertical.gif) no-repeat center right;
+	padding-right:12px;
+	margin-right:2px;
+	display:inline;
+	/*float:left;*/
+}
+
+.list_dt_act_icons li.last_act{
+	background:none;
+}
+
+
+/**************************************************
+DATATABLE sprite for various icons
+**************************************************/
+.dt_act_icons.woicon{
+	background-position:0 -42px;
+}
+
+/*Add*/
+.dt_act_icons.add{
+	background-position:0 -23px;
+}
+
+/*Add Group*/
+.dt_act_icons.addgroup{
+	background-position:0 -61px;
+}
+
+/*Add Computer*/
+.dt_act_icons.addcomp{
+	background-position:0 -898px;
+}
+
+/*Clean*/
+.dt_act_icons.clean{
+	background-position:0 -99px;
+}
+
+/*Configure*/
+.dt_act_icons.conf{
+	background-position:0 -137px;
+}
+
+/*Customize*/
+.dt_act_icons.custom,
+.dt_act_icons.update{
+	background-position:0 -175px;
+}
+
+/*Download*/
+.dt_act_icons.download{
+	background-position:0 -212px;
+}
+
+/*Edit*/
+.dt_act_icons.edit{
+	background-position:0 -252px;
+}
+
+/*Copy*/
+.dt_act_icons.copy{
+	background-position:0 -289px;
+}
+
+/*Export*/
+.dt_act_icons.export{
+	background-position:0 -327px
+}
+
+/*Import*/
+.dt_act_icons.import{
+	background-position:0 -365px
+}
+/*Move*/
+.dt_act_icons.move{
+	background-position:0 -403px;
+}
+
+/*Move Down*/
+.dt_act_icons.movedown{
+	background-position:0 -441px;
+}
+
+/*Move Up*/
+.dt_act_icons.moveup{
+	background-position:0 -478px;
+}
+
+/*Delete*/
+.dt_act_icons.delete{
+	background-position:0 -517px;
+}
+
+/*Reset*/
+.dt_act_icons.reset{
+	background-position:0 -555px;
+}
+
+/*Reorder*/
+.dt_act_icons.reorder{
+	background-position:0 -592px;
+}
+
+/*Scan*/
+.dt_act_icons.scan{
+	background-position:0 -631px;
+}
+
+/*Stop Scan*/
+.dt_act_icons.scanstop{
+	background-position:0 -860px;
+}
+
+/*Enable Real-time Scan*/
+.dt_act_icons.realtime_scan{
+	background-position:0 -944px;
+}
+
+/*Send*/
+.dt_act_icons.send{
+	background-position:0px -669px;
+}
+
+/*New*/
+.dt_act_icons.new{
+	background-position:0px -706px;
+}
+
+/*Log*/
+.dt_act_icons.log{
+	background-position:0px -745px;
+}
+
+/*Alert*/
+.dt_act_icons.alert{
+	background-position:0px -783px;
+}
+
+/*Others*/
+.dt_act_icons.others{
+	background-position:0px -822px;
+}
+
+/*Rename*/
+.dt_act_icons.rename{
+	background-position:0px -920px;
+}
+
+/*Verify*/
+.dt_act_icons.verify{
+	background-position:0px -967px;
+}
+
+
+
+/**************************************************
+menu button/split button list panel
+**************************************************/
+.btn_list_panel{	
+	min-width: 150px;
+	width: auto!important;
+	width: 150px;
+	position: absolute;
+	display: none;
+	z-index: 5;	
+	filter: DropShadow(Color=#d9d9d9, OffX=3, OffY=3, Positive=1); 
+	padding: 0 3px 3px 0;
+}
+
+.list_action{
+	background:#fff url(../images/bg_action_panel.gif) repeat-y top left;
+	border:1px solid #8db3d4;
+}
+
+.list_action .dt_act_icons{
+	padding-left: 23px;
+}
+
+.list_action li{
+	padding: 4px 5px;
+	border-bottom: 1px solid #e5e5e5;/**/
+}
+
+.list_action li.last_act{
+	border: none;
+}
+
+.panel_content {	
+	background: #fff;
+	padding: 8px;
+	border:1px solid #8db3d4;
+	width: 382px;
+	filter: alpha(opacity=100);
+}
+
+.btn_dropup span{
+	background: url(../images/btn_dropup_enable.gif) no-repeat center right;
+	padding-right:10px;
+}
+
+.btn_dropup.disabled span{
+	background: url(../images/btn_dropup_disable.gif) no-repeat center right;
+	padding-right:10px;
+}
+.btn_dropdown span{
+	background: url(../images/btn_dropdown_enable.gif) no-repeat center right;
+	padding-right:10px;
+}
+
+.btn_dropdown.disabled span{
+	background: url(../images/btn_dropdown_disable.gif) no-repeat center right;
+	padding-right:10px;
+}

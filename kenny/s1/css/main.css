@@ -42,14 +42,13 @@ a:hover {
     margin-right: 5px;
 }
 #header .logon .icon {
-    display: block;
-    float: right;
+    display: inline-block;
     width: 16px;
     height: 16px;
     position: relative;
     margin-left: 6px;
     cursor: pointer;
-    margin-top: -3px;
+    vertical-align: bottom;
 }
 #header .logon .icon.help {
     background: url('../img/icon_help.png') no-repeat;

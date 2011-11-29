@@ -1,0 +1,879 @@
+/**************************************************
+Common styles
+@app 		Worry-Free Family
+@version	1.0
+@author 	Gail Wang
+@email		gail_wang@trend.com.tw
+@created	2009/02
+@modified	2010/08
+**************************************************/
+/* import CSS files */
+@import url("../../../skins/default/css/container.css");
+@import url("../../../skins/default/css/ui_elts.css");
+@import url("../../../skins/default/css/nav.css");
+@import url("../../../skins/default/css/datatable.css");
+/*@import url("../../../skins/default/css/ad.css");*/
+
+
+/**************************************************
+RESET from Eric Meyer
+v1.0 | 20080212 
+http://meyerweb.com/eric/tools/css/reset/
+**************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	/*background: transparent;*/
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**************************************************
+common styles
+**************************************************/
+/* IE6 :hover fix */
+html, body {
+	behavior:url(../skins/default/css/htc/csshover.htc); 
+}
+
+html, td, select, input, option, textarea, th, button {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+a/*, 
+a:link, 
+a:visited*/{
+	color: #0066cc;
+}
+
+a:hover{
+	color: #ff0000;
+	text-decoration: none;
+}
+
+/*a:active{
+	color:#CC0000;
+}*/
+
+img{ 
+	vertical-align:middle;
+}
+
+hr{
+	height:1px; 
+	padding:0;
+	margin:6px 0;
+	.margin:0;
+	border:1px solid #ccc;
+	border-width: 0 0 0 0;
+	background:#ccc;
+}
+
+
+/**************************************************
+common form styles
+**************************************************/
+input[type ="checkbox"],
+input[type ="radio"]{
+	width: 13px; 
+	height: 13px;
+	margin: 0px 5px 0px 0;
+	padding: 0;
+}
+
+input, 
+select,
+label{ 
+	vertical-align:middle;
+}
+
+.input_sm,
+.select_sm{
+	font-size:10px;
+}
+
+.input_sm{
+	width:35px;
+	height:12px;
+}
+
+.select_sm{
+	height:18px;
+}
+
+/*width by %*/
+.w20p{
+	width:20%;
+}
+
+.w45p{
+	width:45%;
+}
+
+.w50p{
+	width:50px;
+}
+
+.w60p{
+	width:60%;
+}
+
+.w80p{
+	width:80%;
+}
+
+.w95p{
+	width:95%;
+}
+
+.w100p{
+	width:100%;
+}
+
+/*width by px*/
+.w50{
+	width:50px;
+}
+
+.w100{
+	width:100px;
+}
+
+.w150{
+	width:150px;
+}
+
+.w200{
+	width:200px;
+}
+
+.w220{
+	width: 220px;
+}
+
+.w250{
+	width: 250px;
+}
+
+select.w250 { 
+	width: 256px; /*to make <SELECT>'s width equal to <INPUT> in visualization*/
+}
+
+.w260{
+	width: 260px;
+}
+
+.w270{
+	width: 270px;
+}
+
+.w280{
+	width: 280px;
+}
+
+.w300{
+	width: 300px;
+}
+
+.w350{
+	width: 350px;
+}
+
+.w400 {
+	width: 400px;
+}
+
+select.w400 { 
+	width: 406px; /*to make <SELECT>'s width equal to <INPUT> in visualization*/
+}
+
+.w450 {
+	width: 450px;
+}
+
+.w500{
+	width: 500px;
+}
+
+.w550{
+	width: 550px;
+}
+
+.w600{
+	width: 600px;
+}
+
+.w650{
+	width: 650px;
+}
+
+.w700{
+	width: 700px;
+}
+
+.w750{
+	width: 750px;
+}
+
+.w800{
+	width: 800px;
+}
+
+/*height by px*/
+.h70{
+	height: 70px;
+}
+
+.h100{
+	height: 100px;
+}
+
+.h200{
+	height: 200px;
+}
+
+.h300{
+	height: 300px;
+}
+
+
+/**************************************************
+common input action buttons
+**************************************************/
+.btn{
+	width:80px; 
+	font-size:12px; 
+	height: auto;
+}
+
+.btn.btn_long{
+	width: auto;
+	height: auto;
+}
+
+.btn_sm{
+	width: auto; 
+	height: auto;
+	font-size: 11px; 
+}
+
+.btn_sm_fixed{
+	width: 70px; 
+	font-size: 11px; 
+}
+
+.btnSet{
+/*attributes here*/
+}
+
+.btnSet1{ 
+	margin-right: 15px;
+}
+
+.wrapper_lightbox .btnSet1{
+	margin-right: 0;
+}
+
+/*focused button style*/
+.btn_default_focus{
+	font-weight: bold;
+}
+
+
+/**************************************************
+font sizes & colors
+**************************************************/
+/*main description*/
+.main_desc{
+	line-height: 14px;
+	margin-bottom: 15px;
+}
+
+.txt_bold{
+    font-weight: bold;
+}
+
+.txt_normal{
+    font-weight: normal;
+}
+
+.txt_10{
+	font-size:10px;
+}
+
+.txt_11{
+	font-size:11px;
+}
+
+.txt_12{
+	font-size:12px;
+}
+
+.txt_13{
+	font-size:13px;
+}
+
+.txt_14{
+	font-size:14px;
+}
+
+.txt_17{
+	font-size:17px;
+}
+
+.txt_blue{
+	color:#003399;
+}
+
+a.txt_blue, 
+a:link.txt_blue,
+a:visited.txt_blue {
+	font-weight:normal;
+	color:#003399;	
+	text-decoration: underline;
+}
+
+a:hover.txt_blue  {
+	text-decoration:none;
+}
+
+.txt_red{
+	color:#ff0000;
+}
+
+a.txt_red , 
+a:link.txt_red , 
+a:visited.txt_red ,
+a:visited.txt_red   {
+	font-weight:normal;
+	color:#ff0000;	
+	text-decoration: underline;
+}
+
+a:hover.txt_red {
+	text-decoration:none!important;
+}
+
+.txt_dark_red{
+	color:#cc0000;
+}
+
+.txt_brown{
+	color:#cc3300;
+}
+
+.txt_disabled{
+	color:#999;
+}
+
+.value_default{
+	color:#999;
+}
+
+
+/**************************************************
+disabled
+**************************************************/
+.disabled{
+	color:#999;
+	background: none;
+}
+
+img.disabled {
+	opacity: .5;
+	filter: alpha(opacity=50);
+	cursor: auto;
+}
+
+
+/**************************************************
+alignment
+**************************************************/
+.align_center{ 
+	text-align:center!important;
+}
+.align_right{ 
+	text-align:right!important;
+}
+.valign_top{
+	vertical-align: top!important;
+}
+.valign_mid{
+	vertical-align: middle;
+}
+
+
+/**************************************************
+common table padding
+**************************************************/
+.table_padding{
+}
+
+.table_padding td{
+    padding: 5px;
+}
+
+.table_padding th{
+    padding: 5px 3px 5px 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table_padding th input{
+}
+
+/**************************************************
+padding values
+**************************************************/
+.pad_2{
+	padding: 2px;
+}
+.pad_5{
+	padding: 5px;
+}
+
+.pad_10{
+	padding: 10px;
+}
+
+.pad_15{
+	padding: 15px;
+}
+
+.padrl_3{
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+.padrl_10{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.padl_5{
+	padding-left: 5px;
+}
+
+.padl_15{
+	padding-left:15px;
+}
+
+.padl_20{
+	padding-left:20px;
+}
+
+.padl_48{
+	padding-left:48px;
+}
+
+td.padl_20{
+	padding-left:20px;
+}
+
+.padr_2{
+	padding-right:2px;
+}
+
+.padr_5{
+	padding-right:5px;
+}
+
+.padr_10{
+	padding-right:10px;
+}
+
+.padt_5{
+	padding-top: 5px;
+}
+
+.padt_10{
+	padding-top: 10px;
+}
+
+.padt_15{
+	padding-top: 15px;
+}
+
+.padt_20{
+	padding-top: 20px;
+}
+
+.padb_5{
+	padding-bottom: 5px;
+}
+
+.padb_10{
+	padding-bottom: 10px;
+}
+
+.padb_15{
+	padding-bottom: 15px;
+}
+
+.padb_20{
+	padding-bottom: 20px;
+}
+
+.padtb_3{
+	padding-top:3px;
+	padding-bottom: 3px;
+}
+
+.padtb_5{
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+
+.padtb_10{
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+.padr_20{
+	padding-right:20px;
+}
+
+.padr_30{
+	padding-right:30px;
+}
+
+
+
+/**************************************************
+margin values
+**************************************************/
+.margin_10{
+	margin: 10px;
+}
+
+.margin_15{
+	margin: 15px;
+}
+
+.margint_5{
+	margin-top: 5px;
+}
+
+.margint_10{
+	margin-top: 10px;
+}
+
+.margint_15{
+	margin-top: 15px;
+}
+
+.marginb_5{
+	margin-bottom: 5px;
+}
+
+.marginb_15{
+	margin-bottom: 15px;
+}
+
+.marginb_10{
+	margin-bottom: 10px;
+}
+
+
+/**************************************************
+blocks
+**************************************************/
+/*blocked content with fixed height*/
+.block_content{
+	overflow-y: auto ;
+	overflow-x: hidden;
+	border: 1px solid #b7b7b7;
+	background: #f0f0f0;
+	width: 400px;
+	padding: 10px;
+}
+
+.border_grey{
+	border: 1px solid #b7b7b7;
+}
+
+/*blue border & bg*/
+.border_bg_blue{
+	border: 1px solid #86a1bc;
+	background-color: #f3f9fe;
+	padding: 8px;
+	min-height: 70px;
+	height: auto!important;
+	height: 70px;
+	width: 500px;
+}
+
+/*blue border & bg*/
+.border_blue_bg_white{
+	border: 1px solid #86a1bc;
+	background-color: #fff;
+	padding: 8px;
+}
+
+/*copy text area*/
+.copy_txt_area{
+	border: 1px solid #99c4e8;
+	background-color: #f1faff;
+	padding: 8px;
+	color: #333;
+	width: 98%;
+	line-height: 14px;
+}
+
+.copy_txt_area a,
+.copy_txt_area a:link,
+.copy_txt_area a:visited{
+	color: #0066CC;
+}
+
+.copy_txt_area a:hover{
+	text-decoration: none;
+}
+
+/*selected text*/
+.txt_select,
+.txt_select a,
+.txt_select a:link,
+.txt_select a:visited{
+	background: #1f68dd;
+	color: #fff;
+}
+
+/**************************************************
+no wrap/ border/indent, etc.
+**************************************************/
+.nowrap_cell{
+	white-space:nowrap;
+}
+
+.noborder{
+	border: none;
+}
+
+.txt_indent0{
+	text-indent:0!important;
+}
+
+
+/**************************************************
+notes
+**************************************************/
+/*cite*/.note{
+/*	display: block;*/
+	margin: 3px 0;
+/*	font-style: normal;*/
+	font-size: 11px;
+	font-weight: normal;
+}
+/*cite*/.note em{
+	font-style: normal;
+	font-weight: bold;
+	color: #cf4c20;
+	padding-right: 5px;	
+}
+
+
+/**************************************************
+display
+**************************************************/
+.display_block{
+	display: block !important;
+}
+
+.display_none{
+	display: none !important;
+}
+
+
+/**************************************************
+list styles
+**************************************************/
+.list_bullet{
+	margin: 5px 0;
+}
+
+.list_bullet li{
+	list-style: disc;
+	margin-left: 15px;
+	line-height: 16px;
+}
+
+.list_icon_arrow{
+	margin: 5px 0;
+}
+
+.list_icon_arrow li{
+	padding-left: 15px;
+	line-height: 14px;
+	background:url(../images/bullet_arrow.gif) no-repeat left 2px;
+	margin-bottom: 5px;
+}
+
+.list_num li{
+	list-style: decimal;
+	margin-left: 25px;
+	line-height: 16px;
+}
+
+.list_common{
+	margin: 2px 0;
+}
+
+.list_common li{
+	padding: 2px 0;
+}
+
+.list_inline li{
+	display: inline;
+	padding-left: 5px;
+}
+
+
+/**************************************************
+definition list styles
+**************************************************/
+.dl_common{
+}
+
+.dl_common dt{
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.dl_common dd{
+	padding-bottom: 10px;
+}
+
+.dl_inline dt,
+.dl_inline dd{
+	float: left;
+	zoom: 1;
+}
+
+.dl_inline:after{
+	content:'.';
+	height:0px;
+	visibility:hidden;
+	display:block;
+	clear:both;
+}
+
+
+/**************************************************
+float box
+**************************************************/
+.float_box{
+	clear: both;
+	zoom: 1;
+}
+
+.float_box:after{
+	content: '.';
+	height: 0px;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+
+.float_box_left{
+	float: left;
+	margin-right: 10px;
+	zoom:1;
+}
+
+.float_box_right{
+	float: right;
+	zoom:1;
+}
+
+.rfloat{
+	float:right;
+}
+
+/**************************************************
+error header & error content
+**************************************************/
+.error_header{
+    font-size:20px;
+    color: #FF0000;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight:bolder;
+}
+
+.error_content{
+    line-height: 20px;
+    font-size: 12px;
+}
+
+
+/**************************************************
+RTL specified (properties leave blank intentionally)
+**************************************************/
+.url_ltr{}
+
+
+/**************************************************
+popup menu
+**************************************************/
+.popup_menu_item {
+padding: 5.5px;
+border: solid 1px #f7f4e8;
+background: #fff;
+border:1px solid #8db3d4;
+filter: alpha(opacity=100);
+/*
+color: #000000;
+white-space: nowrap;
+cursor: pointer;
+*/
+}
+
+.popup_menu_item_over {
+color: #ff0000;
+background-color: #e5effa;
+border: solid 1px #d7cfb6;
+cursor: pointer;
+} 

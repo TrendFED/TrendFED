@@ -1,53 +1,216 @@
-.NavBar
-{
-	width: 100%;
-	display:block;
-	position:absolute;
-	top:70px;
-	left:5px;
-	background:url('NavBar_Background.png');
-	background-repeat:repeat-x; 
-}
-.NavItem
-{
-	padding-left: 10px;
-	padding-right: 10px;
-	color:rgb(255,255,255);
-	font-weight:bold;
-	font-size: 13px;
-	height:33px;
-	position:relative;
-	left:-2px;
-	top:-22px;
-}
-.NavItem:hover
-{
-	background:url('NavBar_Background_Hover.png');
-	background-repeat:repeat-x; 
-}
-.NavItemInside
-{
-	padding-left: 10px;
-	padding-right: 10px;
-	color:rgb(255,255,255);
-	font-weight:bold;
-	font-size: 13px;
-	
-	position:relative;
-	top:10px;
-}
-.TopRight
+span.TopRight
 {
 	position:relative;
-	top:10px;
+	top:25px;
 	font-size: 13px;
 	vertical-align: middle;
 	float:right;
 }
-.Title
+span.TopRight span
+{
+	position: relative;
+	padding-right: 5px;
+	font-size: 13px;
+	vertical-align: middle;
+	float:left;
+	display:block;
+}
+span.TopRight span.Help img
+{
+	position: relative;
+	float:left;
+	display:block;
+}
+span.TopRight span.Help
+{
+	float:left;
+	display:block;
+}
+span.TopRight span.Help img.Popup
+{
+	float: none;
+	visibility: hidden; 
+	position: absolute;
+	right: -15px;
+	top: 100%;
+	z-index : 700;
+}
+span.TopRight span:hover > img.Popup {
+	visibility: visible;
+}
+div.Title
 {
 	display:block;
 	width:100%;
 	vertical-align: middle;
 }
-
+ul.NavBar {
+	position: absolute;
+	top: 68px;
+	list-style: none; 
+	margin: 0px; 
+	padding: 0px;
+	font: bold 13px/normal Arial;
+	font-size-adjust: none;
+	font-stretch: normal;
+	background:url('NavBar_Background.png');
+	background-repeat:repeat-x;
+	height: 33px;
+	float: left;
+	z-index: 597;
+	width: 100%;
+}
+ul.NavBar li.NavItem {
+	list-style: none; margin: 0px; padding: 0px;
+	padding: 8px 12px; color: rgb(255, 255, 255); 
+	padding: 0px;
+	line-height: 1.3em; vertical-align: middle; float: left; zoom: 1;
+}
+ul.NavBar li.Spacer {
+	list-style: none; margin: 0px; padding: 0px;
+	width: 60px; color: rgb(255, 255, 255); 
+	padding: 0px;
+	line-height: 1.3em; vertical-align: middle; float: left; zoom: 1;
+	background: url('NavBar_Splitter.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+ul.NavBar li.Spacer:hover {
+	list-style: none; margin: 0px; padding: 0px;
+	padding: 7px 12px; color: rgb(255, 255, 255); 
+	padding: 0px;
+	line-height: 1.3em; vertical-align: middle; float: left; zoom: 1;
+}
+ul.NavBar li.Spacer.hover {
+	list-style: none; margin: 0px; padding: 0px;
+	padding: 7px 12px; color: rgb(255, 255, 255); 
+	padding: 0px;
+	line-height: 1.3em; vertical-align: middle; float: left; zoom: 1;
+}
+ul.NavBar li.hover {
+	position: relative; z-index: 599; cursor: default;
+	background:url('NavBar_Background_Hover.png');
+	background-repeat:repeat-x;
+}
+ul.NavBar li.NavItem:hover {
+	position: relative; z-index: 599; cursor: default;
+	background:url('NavBar_Background_Hover.png');
+	background-repeat:repeat-x;
+}
+ul.NavBar li.NavItem span {
+	padding: 8px 12px; 
+	display: block;
+	background: url('NavBar_Splitter.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+ul.NavBar ul {
+	list-style: none; 
+	margin: 0px; 
+	padding-top: 5px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	padding-right: 0px;
+	left: -2px; 
+	top: 33px; 
+	visibility: hidden; 
+	position: absolute; 
+	z-index: 0;
+	background-color: rgb(234,234,234);
+	width: 176px; color: rgb(0, 0, 0); 
+	font-size: 11px;
+	font-weight: normal;
+	border-right-style:solid;
+	border-left-style:solid;
+	border-color: rgb(102,102,102);
+	border-width: 1px;
+	-moz-box-shadow: 0px 0px 5px #ccc;  
+	-webkit-box-shadow: 0px 0px 5px #ccc;  
+	box-shadow: 0px 0px 5px #ccc;
+}
+ul.NavBar ul li.DropdownBottom{
+	list-style: none; margin: 0px; padding: 0px;
+	left: -1px; 
+	top:  100%;  
+	position: absolute;	
+	z-index: 599;
+	height: 9px;
+	background: url("dropdown_bottom.png") no-repeat bottom;
+	width: 178px; 
+	padding: 0px;
+	-moz-box-shadow: 0px 0px 5px #ccc;  
+	-webkit-box-shadow: 0px 0px 5px #ccc;  
+	box-shadow: 0px 0px 5px #ccc;
+}
+ul.NavBar ul li.DropdownBottom.hover{
+	
+}
+ul.NavBar ul li.DropdownBottom:hover{
+	
+}
+ul.NavBar ul li {
+	float: none;
+	color: rgb(0, 0, 0); 
+	background-color: transparent;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+	padding-right: 1px;
+	font-size: 11px; 
+}
+ul.NavBar ul li img.Cancel
+{
+	visibility: hidden;
+	padding-left: 0px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom:5px;
+	float: right;
+}
+ul.NavBar ul li:hover > img.Cancel {
+	visibility: visible;
+}
+ul.NavBar ul li.hover {
+	background-color: rgb(204, 224, 245);
+	border-style: solid;
+	border-color: rgb(127, 178, 229);
+	border-width: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+	padding-right: 0px;
+}
+ul.NavBar ul li:hover {
+	background-color: rgb(204, 224, 245);
+	border-style: solid;
+	border-color: rgb(127, 178, 229);
+	border-width: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+	padding-right: 0px;
+}
+ul.NavBar ul li a {
+	padding: 0px;
+	display: inline;
+	text-decoration: none;
+}
+ul.NavBar ul li a:link {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+ul.NavBar ul li a:visited {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+ul.NavBar ul li a:hover {
+	color: rgb(0, 0, 0); 
+	text-decoration: none;
+}
+ul.NavBar ul a:active {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+ul.NavBar li.NavItem:hover > ul {
+	visibility: visible;
+}

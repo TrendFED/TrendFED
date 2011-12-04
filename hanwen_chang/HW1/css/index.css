@@ -52,6 +52,9 @@ body {
 	font-family: Arial;
 	font-size: 12px;
 }
+img {
+	vertical-align: middle;
+}
 .header {
 	padding: 0px 26px;
 }
@@ -93,7 +96,7 @@ body {
 .loginCredential .helpIcon .helpMenuContainer:hover {
 	display: block;
 	position: absolute;
-	top: 0px;
+	top: 5px;
 	left: -102px;
 	padding-top: 12px;
 	background-image: url(../images/helpMenuDecorator.png);
@@ -192,6 +195,65 @@ body {
 .mainNav .mainNavItems .mainNavItem .mainNavSubItems:hover {
 	display: block;
 	position: absolute;
+	left: -2px;
 	z-index: 10;
 	white-space: nowrap;
+}
+.favoriteStarImg {
+	vertical-align: top;
+	margin-top: 8px;
+}
+.mainNav .mainNavItems .mainNavItem .mainNavSubItems {
+	background: #EAEAEA;
+	border: 1px solid #666666;
+	-webkit-border-bottom-left-radius: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	-moz-border-radius-bottomright: 7px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	padding-bottom: 5px;
+	position: relative;
+	box-shadow: 1px 1px 4px #999;
+}
+.mainNav .mainNavItems .mainNavItem .mainNavSubItems .mainNavSubItem {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #c1c1c1;
+	border-top: 1px solid #ffffff;
+	position: relative;
+}
+.mainNav .mainNavItems .mainNavItem .mainNavSubItems .mainNavSubItem:first-child {
+	border-top: none;
+}
+.mainNav .mainNavItems .mainNavItem .mainNavSubItems .mainNavSubItem:last-child {
+	border-bottom: none;
+}
+.mainNav .mainNavItems .mainNavItem .mainNavSubItems .mainNavSubItem .mainNavSubSubItems {
+	position: relative;	
+}
+.mainNav .mainNavItems .mainNavItem .mainNavSubItems .mainNavSubItem .mainNavSubSubItems .mainNavSubSubItem {
+	border: 1px #eaeaea solid;
+	line-height: 18px;
+	vertical-align: middle;
+	padding-left: 8px;
+	padding-right: 24px;
+	margin-bottom: 4px;
+	position: relative;
+}
+.mainNav .mainNavItems .mainNavItem .mainNavSubItems .mainNavSubItem .mainNavSubSubItems .mainNavSubSubItem:hover {
+	border: 1px #7fb2e5 solid;
+	background: #cce0f5;
+}
+.mainNav .mainNavItems .mainNavItem .mainNavSubItems .mainNavSubItem .mainNavSubSubItems .mainNavSubSubItem:last-child {
+	margin-bottom: 0px;
+}
+.mainNav .mainNavItems .mainNavItem .mainNavSubItems .mainNavSubItem .mainNavSubSubItems .mainNavSubSubItem .removeFavLink {
+	position: absolute;
+	right: 6px;
+	visibility: hidden;
+	cursor: pointer;
+}
+.mainNav .mainNavItems .mainNavItem .mainNavSubItems .mainNavSubItem .mainNavSubSubItems .mainNavSubSubItem:hover  .removeFavLink {
+	visibility: visible;
 }

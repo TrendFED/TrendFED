@@ -38,7 +38,7 @@ a{color:#0066cc;}
 #trendMenu .navigation .menu a.item.star:hover{background-image:url(btn_star_hover.jpg);}
 #trendMenu .navigation .menu .panel{position:absolute;left:-3px;top:33px;display:none;width:800px;}
 #trendMenu .navigation .menu table .mm{background:#dedede;}
-#trendMenu .navigation .menu table .mm .first{margin:0 0 4px 0;padding:0 0 4px 0;background:url(bg_panel_split.jpg) bottom repeat-x;}
+#trendMenu .navigation .menu table .mm .split{margin:4px 0 0 0;padding:4px 0 0 0;background:url(bg_panel_split.jpg) top repeat-x;}
 #trendMenu .navigation .menu table .mm a{color:#000;text-decoration:none;font-size:12px;line-height:1.5;display:block;border:1px solid #dedede;padding:0 7px;margin:3px 0;}
 #trendMenu .navigation .menu table .mm a:hover{border:1px solid #7fb2e5;background:#cce0f5;}
 #trendMenu .navigation .menu table .mm a.star{padding:0 7px 0 26px;background:url(icon_star.jpg) 5px center no-repeat;}

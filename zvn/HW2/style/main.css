@@ -1,0 +1,221 @@
+span.TopRight
+{
+	position:relative;
+	top:25px;
+	font-size: 100%;
+	vertical-align: middle;
+	float:right;
+}
+span.TopRight span
+{
+	position: relative;
+	padding-right: 5px;
+	font-size: 100%;
+
+	float:left;
+	display:block;
+}
+span.TopRight span.Help img
+{
+	position: relative;
+	float:left;
+	display:block;
+}
+span.TopRight span.Help
+{
+	float:left;
+	display:block;
+}
+span.TopRight span.Help img.Popup
+{
+	float: none;
+	visibility: hidden; 
+	position: absolute;
+	right: -15px;
+	top: 100%;
+	z-index : 700;
+}
+span.TopRight span:hover > img.Popup {
+	visibility: visible;
+}
+.Title
+{
+	display:block;
+	width:100%;
+
+}
+ul.NavBar {
+	position: absolute;
+	top: 60px;
+	list-style: none; 
+	margin: 0; 
+	padding: 0;
+	font: bold 100% Arial;
+	font-stretch: normal;
+	background:url('sprite.png');
+	background-position: 0 0;
+	background-repeat:repeat-x;
+	height: 33px;
+	float: left;
+	z-index: 597;
+	width: 100%;
+}
+ul.NavBar li.NavItem {
+	list-style: none; margin: 0; padding: 0;
+	padding: 8px 12px; color: rgb(255, 255, 255); 
+	padding: 0;
+	line-height: 1.3em; vertical-align: middle; float: left; zoom: 1;
+}
+ul.NavBar li.Spacer {
+	list-style: none; margin: 0; padding: 0;
+	width: 60px; color: rgb(255, 255, 255); 
+	
+	line-height: 1.3em; vertical-align: middle; float: left; zoom: 1;
+	background: url('NavBar_Splitter.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+ul.NavBar li.Spacer:hover {
+}
+
+
+
+
+
+
+ul.NavBar li.hover {
+	position: relative; z-index: 599; cursor: default;
+	background:url('sprite.png');
+	background-position: 0 -43px;
+	background-repeat:repeat-x;
+}
+ul.NavBar li.NavItem:hover {
+	position: relative; z-index: 599; cursor: default;
+	background:url('sprite.png');
+	background-position: 0 -43px;
+	background-repeat:repeat-x;
+}
+ul.NavBar li.NavItem span {
+	padding: 8px 12px; 
+	display: block;
+	background: url('NavBar_Splitter.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+ul.NavBar ul {
+	list-style: none; 
+	margin: 0; 
+	padding-top: 5px;
+	padding-bottom: 2px;
+	padding-left: 0;
+	padding-right: 0;
+	left: -2px; 
+	top: 33px; 
+	visibility: hidden; 
+	position: absolute; 
+	z-index: 0;
+	background-color: rgb(234,234,234);
+	width: 176px; color: rgb(0, 0, 0); 
+	font-size: 85%;
+	font-weight: normal;
+	border-right-style:solid;
+	border-left-style:solid;
+	border-color: rgb(102,102,102);
+	border-width: 1px;
+	-moz-box-shadow: 0 0 5px #ccc;  
+	-webkit-box-shadow: 0 0 5px #ccc;  
+	box-shadow: 0 0 5px #ccc;
+}
+ul.NavBar ul .DropdownBottom{
+	list-style: none; margin: 0; padding: 0;
+	left: -1px; 
+	top:  100%;  
+	position: absolute;	
+	z-index: 599;
+	height: 9px;
+	background: url("sprite2.png") no-repeat bottom;
+	background-position: -9px 0;
+	width: 178px; 
+	
+	-moz-box-shadow: 0 0 5px #ccc;  
+	-webkit-box-shadow: 0 0 5px #ccc;  
+	box-shadow: 0 0p 5px #ccc;
+}
+ul.NavBar ul li {
+	float: none;
+	color: rgb(0, 0, 0); 
+	background-color: transparent;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+	padding-right: 1px;
+	font-size: 100%; 
+}
+ul.NavBar ul li .Star
+{
+	width: 15px;
+	height: 13px;
+	background:url("sprite2.png");
+	background-position: 0 -17px;
+	background-repeat: no-repeat;
+}
+ul.NavBar ul li div.Cancel
+{
+	visibility: hidden;
+	width: 7px;
+	height: 8px;
+	margin-left: 0;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom:5px;
+	float: right;
+	background:url("sprite2.png");
+	background-position: 0 0;
+}
+ul.NavBar ul li:hover > div.Cancel {
+	visibility: visible;
+}
+ul.NavBar ul li.hover {
+	background-color: rgb(204, 224, 245);
+	border-style: solid;
+	border-color: rgb(127, 178, 229);
+	border-width: 1px;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 4px;
+	padding-right: 0;
+}
+ul.NavBar ul li.SubItem:hover {
+	background-color: rgb(204, 224, 245);
+	border-style: solid;
+	border-color: rgb(127, 178, 229);
+	border-width: 1px;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 4px;
+	padding-right: 0;
+}
+ul.NavBar ul li a {
+	padding: 0;
+	display: inline;
+	text-decoration: none;
+}
+ul.NavBar ul li a:link {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+ul.NavBar ul li a:visited {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+ul.NavBar ul li a:hover {
+	color: rgb(0, 0, 0); 
+	text-decoration: none;
+}
+ul.NavBar ul a:active {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+ul.NavBar li.NavItem:hover > ul {
+	visibility: visible;
+}

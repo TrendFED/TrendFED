@@ -1,0 +1,294 @@
+﻿#header {
+    position:relative;
+    top:14px; 
+}
+
+#logo {
+    position: absolute;
+    left:27px; 
+    
+    background: url(../pic/csg-4ee4a45b4a1d2.png) no-repeat top left;
+    background-position: 0 -605px; width: 367px; height: 45px;
+}
+#userInfo {
+    position: absolute;
+    left:783px; 
+    top:15px;
+  
+    font-size:77%;
+}
+#user, #userName {
+    position: relative;
+}
+#userSplit{
+    position: relative;
+    left:2px;
+}
+#logoutLink{
+    position: relative;
+    left:4px;
+	color:#0066CC;
+	text-decoration:underline;
+}
+
+#icon_01 {
+
+    position: absolute;
+    left:970px;
+    top: 13px;
+    
+    background: url(../pic/csg-4ee4a45b4a1d2.png) no-repeat top left;
+    background-position: 0 -473px; width: 16px; height: 16px;
+}
+#icon_02 {
+
+    position: absolute;
+    left:1000px;
+    top: 13px;
+
+    background: url(../pic/csg-4ee4a45b4a1d2.png) no-repeat top left;
+    background-position: 0 -539px; width: 15px; height: 16px;
+}
+
+#headerMenu {
+    position:relative;
+    top:65px; 
+}
+.menu{
+}
+
+.menuItemFixed{
+    background-image: url(../pic/menu_back_normal.png);
+    background-repeat: repeat-x;
+    height: 31px;
+    float: left;
+    border-top: 1px solid #870101; 
+    border-bottom: 1px solid #870101; 
+    text-align: center;
+    line-height: 31px;
+    color: white;
+}
+
+.menuItem{
+    background-image: url(../pic/menu_back_normal.png);
+    background-repeat: repeat-x;
+    height: 31px;
+    float: left;
+    border-top: 1px solid #870101; 
+    border-bottom: 1px solid #870101; 
+    text-align: center;
+    line-height: 31px;
+    color: white;
+}
+
+.menuItem:hover {
+    background-image: url(../pic/menu_back_selected.png);
+    background-repeat: repeat-x;
+    height: 31px;
+    float: left;
+    border-top: 1px solid #852929; 
+    border-bottom: 1px solid #852929; 
+    text-align: center;
+    line-height: 31px;
+    color: white;
+}
+
+#beginEmptyMenuItem{
+    width: 26px;
+}
+
+.menuItemSplit{
+    background: url(../pic/csg-4ee4a45b4a1d2.png) no-repeat top left;
+    background-position: 0 -862px; width: 1px; height: 31px;
+    float: left;
+    border: 1px solid #870101;
+    border-left: 0px;
+}
+#favoritesMenuItem {
+    position: relative;
+    width: 49px;
+}
+
+#dashboardMenuItem {
+    width: 92px;
+}
+
+#managmentMenuItem {
+    width: 95px;
+}
+
+#endpointsMenuItem {
+    width: 82px;
+}
+
+#servicesMenuItem {
+    width: 77px;
+}
+
+#logsMenuItem {
+    width: 56px;
+}
+
+#reportsMenuItem {
+    width: 71px;
+}
+
+#updatesMenuItem {
+    width: 77px;
+}
+
+#administrationMenuItem {
+    width: 110px;
+}
+
+#endEmptyMenuItem {
+    width: 255px;
+}
+
+#icon_star{
+    position: absolute;
+    left: 15px;
+    background: url(../pic/csg-4ee4a45b4a1d2.png) no-repeat top left;
+    background-position: 0 -943px; width: 20px; height: 31px;
+}
+
+.menuItem:hover  #icon_star{
+    position: absolute;
+    left: 15px;
+    background: url(../pic/csg-4ee4a45b4a1d2.png) no-repeat top left;
+    background-position: 0 -1024px; width: 20px; height: 31px;
+}
+
+.dropDownMenu {
+
+    display: none;
+
+    width: 198px;
+    border: 1px solid #666666;
+    background:#dedede;
+    
+    position: absolute;
+    top: 31px;
+    left: -2px;
+    
+    color: black;
+}
+
+.menuItem:hover  .dropDownMenu{
+    display: block;
+}
+
+.dropDownMenuLeft {
+    background-image: url(../pic/drop_down_left.png);
+    background-repeat: repeat-y;
+    position: absolute;
+    border: 0px;
+    left: -3px;
+    width: 3px;
+ }
+
+.dropDownMenuLeftCorner {
+    background: url(../pic/csg-4ee4a45b4a1d2.png) no-repeat top left;
+    background-position: 0 -115px; width: 9px; height: 13px;
+    position: absolute;
+    border: 0px;
+    left: -3px;
+}
+
+.dropDownMenubottom {
+    background-image: url(../pic/drop_down_bottom.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    border: 0px;
+    left: -3px;
+    width: 198px;
+    height: 7px;
+}
+
+.dropDownMenuRightCorner {
+    background: url(../pic/csg-4ee4a45b4a1d2.png) no-repeat top left;
+    background-position: 0 -280px; width: 12px; height: 13px;
+    position: absolute;
+    border: 0px;
+    left: 192px;
+}
+
+.dropDownMenuRight {
+    background-image: url(../pic/drop_down_right.png);
+    background-repeat: repeat-y;
+    position: absolute;
+    border: 0px;
+    left: 198px;
+    width: 6px;
+}
+
+#favoritesDropDownMenu {
+    height: 100px;
+}
+
+#favoritesDropDownMenu  .dropDownMenuLeft{
+    height: 100px;
+}
+
+#favoritesDropDownMenu  .dropDownMenubottom{
+    top: 100px;
+}
+
+#favoritesDropDownMenu  .dropDownMenuLeftCorner{
+    top: 94px;
+}
+
+#favoritesDropDownMenu  .dropDownMenuRightCorner{
+    top: 94px;
+}
+
+#favoritesDropDownMenu  .dropDownMenuRight{
+    height: 100px;
+}
+
+#addFavoriteItem {
+    border: 0px;
+    border-bottom: 1px solid #c1c1c1; 
+    height: 29;
+    text-align: left;
+    padding: 1px;
+    padding-left: 7px;
+}
+#favoriteItems{
+    border: 0px;
+    border-top: 1px solid white; 
+    padding-top: 12px;
+    text-align: left;
+}
+
+.dropDownMenuItem{
+    padding: 1px;
+    padding-left: 7px;
+    position: relative;
+    height: 18px;
+    border:1px solid #dedede;
+}
+
+.dropDownMenuItem:hover {
+    padding: 1px;
+    padding-left: 7px;
+    position: relative;
+    height: 18px;
+    border:1px solid #7FB2E5;
+    background:#CCE0F5;
+}
+
+.icon_favorite_star{
+    background: url(../pic/csg-4ee4a45b4a1d2.png) no-repeat top left;
+    background-position: 0 -343px; width: 16px; height: 15px;
+}
+.dropDownMenuItem:hover .icon_favorite_star{
+    background: url(../pic/csg-4ee4a45b4a1d2.png) no-repeat top left;
+    background-position: 0 -408px; width: 16px; height: 15px;
+}
+
+.dropDownMenuItemTitle{
+    position: relative;
+    left: 20px;
+    top: -22px;
+}

@@ -1,0 +1,58 @@
+.sprite-drop_down_bottom{ background-position: 0 0; width: 1px; height: 7px; } 
+.sprite-drop_down_cross{ background-position: 0 -57px; width: 8px; height: 8px; } 
+.sprite-drop_down_left-corner{ background-position: 0 -115px; width: 9px; height: 13px; } 
+.sprite-drop_down_left{ background-position: 0 -178px; width: 3px; height: 1px; } 
+.sprite-drop_down_right{ background-position: 0 -229px; width: 6px; height: 1px; } 
+.sprite-drop_down_right_corner{ background-position: 0 -280px; width: 12px; height: 13px; } 
+.sprite-drop_down_star_normal{ background-position: 0 -343px; width: 16px; height: 15px; } 
+.sprite-drop_down_star_selected{ background-position: 0 -408px; width: 16px; height: 15px; } 
+.sprite-icon01{ background-position: 0 -473px; width: 16px; height: 16px; } 
+.sprite-icon02{ background-position: 0 -539px; width: 15px; height: 16px; } 
+.sprite-logo{ background-position: 0 -605px; width: 367px; height: 45px; } 
+.sprite-menu_back_normal{ background-position: 0 -700px; width: 1px; height: 31px; } 
+.sprite-menu_back_selected{ background-position: 0 -781px; width: 1px; height: 31px; } 
+.sprite-menu_split_normal{ background-position: 0 -862px; width: 1px; height: 31px; } 
+.sprite-menu_star_normal{ background-position: 0 -943px; width: 20px; height: 31px; } 
+.sprite-menu_star_selected{ background-position: 0 -1024px; width: 20px; height: 31px; } 
+
+        <div id="favoritesMenuItem" class="menuItem">
+            ¡¹
+            <div id="favoritesDropDownMenu" class="dropDownMenu">
+                <div id="addFavoriteItem" class="dropDownMenuItem">
+                    Add current page to Favorites
+                </div>
+                <div id="favoriteItem1" class="dropDownMenuItem">
+                    Scan Now for All Domain
+                </div>
+                <div id="favoriteItem2" class="dropDownMenuItem">
+                    Update Server Now
+                </div>
+            </div>
+        </div>
+
+        <div id="dashboardMenuItem" class="menuItem">
+            Dashboard
+        </div>
+        <div id="managmentMenuItem" class="menuItem">
+            Managment
+        </div>
+        <div id="endpointsMenuItem" class="menuItem">
+            Endpoints
+        </div>
+        <div id="servicesMenuItem" class="menuItem">
+            Services
+        </div>
+        <div id="logsMenuItem" class="menuItem">
+            Logs
+        </div>
+        <div id="reportsMenuItem" class="menuItem">
+            Reports
+        </div>
+        <div id="updatesMenuItem" class="menuItem">
+            Updates
+        </div>
+        <div id="administrationMenuItem" class="menuItem">
+            Administration
+        </div>
+        <div id="endEmptyMenuItem" class="menuItem">
+        </div>

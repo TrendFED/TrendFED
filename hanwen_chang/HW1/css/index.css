@@ -45,6 +45,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* clearfix */
+.clearfix{zoom:1;}
+.clearfix:after{content:'.';display:block;clear:both;visibility:hidden;height:0;font-size:0;}
 /*
  *
  */
@@ -57,6 +60,9 @@ img {
 }
 .header {
 	padding: 0px 26px;
+}
+.logo {
+	float: left;
 }
 .loginCredential {
 	float: right;
@@ -96,6 +102,7 @@ img {
 .loginCredential .helpIcon .helpMenuContainer:hover {
 	display: block;
 	position: absolute;
+	z-index: 10;
 	top: 5px;
 	left: -102px;
 	padding-top: 12px;
@@ -180,7 +187,8 @@ img {
     font-family:Arial, Helvetica, sans-serif;
     font-size:12px;	
     font-weight:bold;
-    line-height:33px;    
+    line-height:33px;
+	height: 33px;
     padding:0 22px 0 22px;
     text-decoration:none;    
 }
@@ -228,6 +236,7 @@ img {
 }
 .mainNav .mainNavItems .mainNavItem .mainNavSubItems .mainNavSubItem:last-child {
 	border-bottom: none;
+	padding-bottom: 0px;
 }
 .mainNav .mainNavItems .mainNavItem .mainNavSubItems .mainNavSubItem .mainNavSubSubItems {
 	position: relative;	

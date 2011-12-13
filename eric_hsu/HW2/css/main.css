@@ -15,7 +15,7 @@ html, body {
 }
 
 #logo {
-	background: url('../images/csg-4ee1c149347c8.png') no-repeat top left;
+	background: url('../images/csg-4ee1c149347c8.png') no-repeat;
 	background-position: 0 -27px; width: 366px; height: 38px;
 	margin: 13px 17px 14px 17px;
     display: inline-block;
@@ -45,18 +45,18 @@ html, body {
 }
 
 #logon .icon.help {
-	background: url('../images/csg-4ee1c149347c8.png') no-repeat top left;
+	background: url('../images/csg-4ee1c149347c8.png') no-repeat;
 	background-position: 0 -186px; width: 16px; height: 16px;
 }
 
 #logon .icon.document {
-	background: url('../images/csg-4ee1c149347c8.png') no-repeat top left;
+	background: url('../images/csg-4ee1c149347c8.png') no-repeat;
 	background-position: 0 -160px; width: 16px; height: 16px;
 }
 
 #logon .submenu .arrow {
     position: absolute;
-	background: url('../images/csg-4ee1c149347c8.png') no-repeat top left;
+	background: url('../images/csg-4ee1c149347c8.png') no-repeat;
 	background-position: 0 0; width: 18px; height: 17px;	
     z-index: 10;
     top: 4px;
@@ -73,7 +73,7 @@ html, body {
 }
 
 #logon .submenu ul {
-	background: url('../images/csg-4ee1c149347c8.png') no-repeat top left;
+	background: url('../images/csg-4ee1c149347c8.png') no-repeat;
 	background-position: 0 -230px; width: 135px; height: 160px;
 	border: 2px solid #fff;
     box-shadow: 0px 0px 4px #000;
@@ -131,7 +131,7 @@ html, body {
 	display: inline-block;
 	margin-top: 7px;
 	margin-bottom: -3px;
-	background: url('../images/csg-4ee1c149347c8.png') no-repeat top left;
+	background: url('../images/csg-4ee1c149347c8.png') no-repeat;
 	background-position: 0 -75px; width: 17px; height: 17px;	
 }
 
@@ -165,7 +165,7 @@ html, body {
     color: #000;
     padding: 0 6px 0 30px;
     line-height: 22px;
-	background: url('../images/csg-4ee1c149347c8.png') no-repeat top left;
+	background: url('../images/csg-4ee1c149347c8.png') no-repeat;
 	background-position: 0 -102px; height: 22px;
     text-decoration: none;
 }
@@ -174,7 +174,7 @@ html, body {
     background: none;
 }
 #nav ol li a:hover {
-	background: url('../images/csg-4ee1c149347c8.png') no-repeat top left;
+	background: url('../images/csg-4ee1c149347c8.png') no-repeat;
 	background-position: 0 -131px; height: 20px;
 	background-color: #cce0f5;
     padding: 0 5px 0 29px;
@@ -191,7 +191,7 @@ html, body {
     display: none;
 }
 #nav ol li a:hover .close {
-	background: url('../images/csg-4ee1c149347c8.png') no-repeat top left;
+	background: url('../images/csg-4ee1c149347c8.png') no-repeat;
 	background-position: 0 -212px; width: 8px; height: 8px;
     cursor: pointer;
     display: block;

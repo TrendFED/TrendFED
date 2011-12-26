@@ -129,14 +129,9 @@ a:hover {
 #navigation ol {
     position: absolute;
     display: none;
-    width: 200px;
-    border: 1px solid #666;
+    width:400px;
+    border: 0px solid #666;
     margin: 0 0 0 -2px;
-    padding: 6px 0;
-    box-shadow: 0px 2px 5px #999;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    background-color: #e6e6e6;
 }
 #navigation ol li{
     padding-top: 8px;
@@ -188,4 +183,43 @@ a:hover {
     display: block;
     float: right;
     margin-top: 6px;
+}
+.nav-submenu{
+	background-color: #e6e6e6;
+}
+.nav-submenu .lt{
+	width:10px;
+	height:5px;
+	background:url(../rex-img/bg_menu_ml.jpg) top left no-repeat;
+}
+.nav-submenu .rt{
+	width:10px;
+	height:5px;
+	background:url(../rex-img/bg_menu_mr.jpg) top right no-repeat;
+}
+.nav-submenu .lc{
+	width:10px;
+	background:url(../rex-img/bg_menu_ml.jpg) top left repeat-y;
+}
+.nav-submenu .cc{
+	width:200px;
+	
+}
+.nav-submenu .rc{
+	width:10px;
+	background:url(../rex-img/bg_menu_mr.jpg) top right repeat-y;
+}
+.nav-submenu .lb{
+	width:10px;
+	height:11px;
+	background:url(../rex-img/bg_menu_bl.jpg) no-repeat;
+}
+.nav-submenu .cb{
+	height:11px;
+	background:url(../rex-img/bg_menu_bm.jpg) repeat-x;
+}
+.nav-submenu .rb{
+	width:10px;
+	height:11px;
+	background:url(../rex-img/bg_menu_br.jpg) no-repeat;
 }

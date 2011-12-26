@@ -1,8 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+"http://www.w3.org/TR/html4/strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet"  href="reset-font-min.css"/>
         <title>New Web Project</title>
         <script src="script/jquery-1.7.1.js" type="text/javascript" charset="utf-8"></script>
         <style>
@@ -89,7 +90,7 @@
         	.submenus{
         		
         		width:15em;
-        		margin-top:0.25em;
+        		margin-top:0em;
         		background-color: #b6b6b6;	
         		border-style:solid;
         		border-color:black;
@@ -106,7 +107,7 @@
 				background-color: #BBBBBB;
         	}
         	.submenus h2{
-        		font-size:1em;
+        		font-size:93%;
         		border-bottom-style: solid;
         		border-bottom-width: 1px;
         		border-bottom-color: gray;
@@ -127,8 +128,9 @@
         	#main_navigation > li{
         		position: relative;
         	}
-        	#main_navigation > li:hover .submenus{
+        	#main_navigation > li:hover .submenus {
         		display:block;
+        		position: absolute;
         	}
         	h1{
         		display: inline;	
@@ -193,7 +195,7 @@
 			        	<li>Update Server Now</li>	
 			        </ul>
 		        </li>
-	        	<li >dashboard
+	        	<li>dashboard
 			        <ul class='submenus' >
 			        	<h2>dash board function</h2>
 			        	<li>Scan now for All Domain </li>	

@@ -1,0 +1,25 @@
+.widget-scott_tseng-sprite-1 { background: url(sprite.png); background-position: 0 0; width: 16px; height: 16px; }
+.widget-scott_tseng-sprite-2 { background: url(sprite.png); background-position: 0 -16px; width: 16px; height: 16px; }
+.widget-scott_tseng-sprite-3 { background: url(sprite.png); background-position: 0 -32px; width: 16px; height: 16px; }
+.widget-scott_tseng-sprite-4 { background: url(sprite.png); background-position: 0 -48px; width: 16px; height: 16px; }
+.widget-scott_tseng-btn-container { float: right; }
+
+.widget-scott_tseng-chart-title
+{
+  background-color: #eee;
+  padding: 0.4em;
+  border: 1px solid #ccc;
+  border-bottom-width: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: bold;
+}
+
+.widget-scott_tseng-chart-body
+{
+  padding: 0.4em;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+}

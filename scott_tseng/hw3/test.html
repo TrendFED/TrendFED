@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <title>HTML 5 Template</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="widget.scott_tseng.css" />
+    <script src="widget.js"></script>
+    <script src="widget.scott_tseng.js"></script>
+</head>
+<body>
+    <h1>HTML 5 Template</h1>
+    <div id="insert_here" style="width: 400px;"></div>
+    <hr>
+    <script type="text/javascript">
+
+(function() {
+    var chart = new Trend.widget.scott_tseng("insert_here");
+    chart.init();
+    chart.title = "this should be title";
+    chart.render();
+})();
+
+    </script>
+</body>
+</html>

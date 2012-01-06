@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <title>HTML 5 Template</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="reset-font-min.css">
+    <link rel="stylesheet" href="Ivan_Chu.css">
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="FusionCharts/JSClass/FusionCharts.js"></script>
+    <script type="text/javascript" src="module.js"></script>
+    <style>
+        .module{width:450px;height:300px;}
+    </style>
+    <script>
+var Trend = Trend || {};
+Trend.widget = Trend.widget || {};    
+Trend.widget.Base = {
+    name : "TrendFed Howework 3",
+    title : "TrendFed Howework 3",
+    hasBtnSetting : true,
+    hasBtnRefresh : true,
+    hasBtnHelp : false,
+    hasBtnClose : false,
+    onClickSetting : function(){
+        alert('onClickSetting');
+    },
+    onClickRefresh : function(){
+        alert('onClickRefresh');
+    },
+    onClickHelp : function(){
+        alert('onClickHelp');
+    },
+    onClickClose : function(){
+        alert('onClickClose');
+    },
+    init : function(){
+    },
+    render : function(){
+    }
+};
+$(function() {
+    var doWhileExist = function(ModuleID,objFunction){
+        var dTarget = $(document.getElementById(ModuleID));
+        if(dTarget){
+            objFunction(dTarget,Trend.widget.Base);
+        }                
+    };
+    doWhileExist('Ivan_Chu',Trend.widget.Ivan_Chu.renderChar);
+});
+    </script>
+</head>
+<body>
+    <div id="Ivan_Chu" class="Ivan_Chu module">
+    </div>
+</body>
+</html>

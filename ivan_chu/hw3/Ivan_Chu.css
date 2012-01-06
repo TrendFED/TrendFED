@@ -1,0 +1,19 @@
+.Ivan_Chu .hd{height:28px;}
+.Ivan_Chu .hd .topleft{height:100%;width:7px;background:url(images/widgetbox_topleft.png) no-repeat;float:left;}
+.Ivan_Chu .hd .topmid{height:100%;background:url(images/widgetbox_topmid.png) repeat-x;float:left;}
+.Ivan_Chu .hd .topmid .title{margin-top:6px;float:left;}
+.Ivan_Chu .hd .topright{height:100%;width:7px;background:url(images/widgetbox_topright.png) no-repeat;float:left;}
+.Ivan_Chu .hd .control_btn{float:right;margin-top:6px;}
+.Ivan_Chu .hd .control_btn .icons{height:16px;width:16px;float:right;cursor:pointer;}
+.Ivan_Chu .hd .control_btn .icon_edit{background:url(images/icon_edit.png) 0 0;float:left;}
+.Ivan_Chu .hd .control_btn .icon_refresh{background:url(images/icon_refresh.png) 0 0;float:left;}
+.Ivan_Chu .hd .control_btn .icon_help{background:url(images/icon_help.png) 0 0;float:left;}
+.Ivan_Chu .hd .control_btn .icon_close{background:url(images/icon_close.png) 0 0;float:left;}
+.Ivan_Chu .bd{height:200px;}
+.Ivan_Chu .bd .bodyleft{height:100%;float:left;width:7px;background:url(images/bg_dot.gif) repeat-y top left;}
+.Ivan_Chu .bd .bodymid{height:100%;float:left;background:#FFF;}
+.Ivan_Chu .bd .bodyright{height:100%;float:left;width:7px;background:url(images/bg_dot.gif) repeat-y top right;}
+.Ivan_Chu .ft{height:7px;}
+.Ivan_Chu .ft .footleft{height:100%;float:left;width:7px;background:url(images/widgetbox_btmleft.png) no-repeat;}
+.Ivan_Chu .ft .footmid{height:100%;float:left;background:url(images/bg_dot.gif) repeat-x bottom left;}
+.Ivan_Chu .ft .footright{height:100%;float:left;width:7px;background:url(images/widgetbox_btmright.png) no-repeat;}

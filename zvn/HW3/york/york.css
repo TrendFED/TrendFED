@@ -1,0 +1,77 @@
+.YorkWidget
+{
+	width: 500px;
+	height: 400px;
+	margin:0;
+	padding: 0;
+	border: 2px solid #ADADAD;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.YorkWidget .YorkHeader
+{
+	width: 100%;
+	height: 39px;
+	margin:0;
+	padding: 0;
+	border-bottom: 2px solid #ADADAD;
+	background:url(header_bg.png) repeat-x;
+}
+.YorkWidget .YorkHeader .YorkText
+{
+	font-size: 19px;
+	display:block;
+	float:left;
+	padding: 10px 8px 10px 8px;
+}
+.YorkWidget .YorkHeader .YorkButton
+{
+	width: 17px;
+	height: 21px;
+	display:block;
+	float:right;
+	margin: 10px 3px 10px 3px;
+}
+.YorkWidget .YorkHeader #YorkSetting
+{
+	background:url(Setting.png) no-repeat;
+}
+.YorkWidget .YorkHeader #YorkHelp
+{
+	background:url(Help.png) no-repeat;
+}
+.YorkWidget .YorkHeader #YorkRefresh
+{
+	background:url(Refresh.png) no-repeat;
+}
+.YorkWidget .YorkHeader #YorkClose
+{
+	background:url(Close.png) no-repeat;
+}
+.YorkWidget .YorkBody
+{
+	width: 490px;
+	height: 350px;
+	padding: 5px;
+}
+.YorkWidget .YorkBody .YorkTable
+{
+	font-size: 20px;
+}
+.YorkWidget .YorkBody .YorkTable .YorkTableTitle
+{
+	background-color: #AAAAAA;
+}
+.YorkWidget .YorkBody .YorkTable th
+{
+	padding: 5px;
+}
+.YorkWidget .YorkBody .YorkTable tr
+{
+	padding: 0px;
+}
+.YorkWidget .YorkBody .YorkTable td
+{
+	padding: 5px;
+}

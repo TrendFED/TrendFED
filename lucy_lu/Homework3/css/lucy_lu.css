@@ -1,0 +1,18 @@
+#lucy_lu{margin:10px;}
+#lucy_lu .hd .left{width:7px;height:28px;background:url(../img/widgetbox_topleft.png) no-repeat;}
+#lucy_lu .hd .mid{text-align:left;font-weight:bold;height:28px;background:url(../img/widgetbox_topmid.png) repeat-x;}
+#lucy_lu .hd .right{width:7px;height:28px;background:url(../img/widgetbox_topright.png) no-repeat;}
+#lucy_lu .hd .icon{float:right;display:block;}
+#lucy_lu .hd .icon a{display:inline-block;width:16px;height:16px;margin-left:2px;cursor:pointer;padding:0;}
+#lucy_lu .hd .icon a.btn_setting{background:url('../img/icon_edit.png') 0 0 no-repeat;}
+#lucy_lu .hd .icon a.btn_refresh{background:url('../img/icon_refresh.png') 0 0 no-repeat;}
+#lucy_lu .hd .icon a.btn_help{background:url('../img/icon_help.png') 0 0 no-repeat;}
+#lucy_lu .hd .icon a.btn_close{background:url('../img/icon_close.png') 0 0 no-repeat;}
+#lucy_lu .hd .icon a:hover{background-position:0 -16px;}
+#lucy_lu .hd .icon a:active{background-position:0 -32px;}
+#lucy_lu .bd{background:#fff;}
+#lucy_lu .bd .left{background:url(../img/bg_dot.gif) left repeat-y #fff;}
+#lucy_lu .bd .right{background:url(../img/bg_dot.gif) right repeat-y #fff;}
+#lucy_lu .ft .left{width:7px;height:7px;background:url(../img/widgetbox_btmleft.png) no-repeat;}
+#lucy_lu .ft .mid{height:7px;background:url(../img/widgetbox_btmmid.png) repeat-x;}
+#lucy_lu .ft .right{width:7px;height:7px;background:url(../img/widgetbox_btmright.png) no-repeat;}

@@ -14,7 +14,7 @@ html,body{min-width:1024px;font-size:85%;}
 #home_page #hd .help_menu{display:none;}
 #home_page #hd .help:hover .help_menu{display:block;}
 #home_page #hd .help_menu .help_menu_arrow{position:absolute;top:21px;z-index:2;left:2px;width:15px;height:15px;background:#ffffff url('../img/bg_help_top.png') no-repeat;}
-#home_page #hd .help_menu ul{position:absolute;border:3px solid #fff;top:33px;left:-100px;line-height:22px;color:#ffffff;font-weight:bold;background:#ffffff url('../img/bg_help.png') repeat-x;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;box-shadow:5px 5px 5px #adadad;-moz-box-shadow:5px 5px 5px #adadad;-webkit-box-shadow:5px 5px 5px #adadad;}
+#home_page #hd .help_menu ul{position:absolute;border:3px solid #fff;top:33px;left:-100px;line-height:22px;color:#ffffff;font-weight:bold;background:#ffffff url('../img/bg_help.png') repeat-x;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;box-shadow:0px 0px 15px #adadad;-moz-box-shadow:0px 0px 15px #adadad;-webkit-box-shadow:0px 0px 15px #adadad;}
 #home_page #hd .help_menu ul a{color:#ffffff;text-decoration:none;white-space:nowrap;margin:10px;}
 #home_page #hd .document{float:left;width:16px;height:17px;margin-right:10px;background:#ffffff url('../img/icon_document.png') no-repeat;}
 

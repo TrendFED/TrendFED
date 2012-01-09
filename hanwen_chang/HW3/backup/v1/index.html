@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>Homework 3</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Homework 3</h1>
+	<div id="widget_hanwen"></div>
+    <script src="./Trend.widget.Base.js"></script>
+    <script src="./Trend.widget.hanwen_chang.js"></script>
+    <script>
+(function(){
+    var dTarget = document.getElementById('widget_hanwen');
+    if (dTarget){
+        var _widget_hanwen = new Trend.widget.hanwen_chang(dTarget);
+        _widget_hanwen.render();
+    }
+})();        
+    </script>
+</body>
+</html>

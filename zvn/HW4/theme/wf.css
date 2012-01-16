@@ -1,0 +1,19 @@
+/* common */
+.clearfix{zoom:1;}
+.clearfix:after{content:'.';display:block;clear:both;visibility:hidden;height:0;font-size:0;}
+
+/* #container */
+#container{padding:20px;width:500px;}
+
+/* .widget */
+.widget{position: absolute;}
+.widget a {text-decoration: none; color: #000000;}
+.widget a :hover{text-decoration: none; color: #8888FF; cursor:help; z-index:900;}
+.widget:hover > .bd{display:block; position:relative; top:100%; left:0; z-index:900;}
+.widget .bd{z-index: 900;text-decoration: none; display:none;}
+.york .bd{z-index: 900;text-decoration: none; display:none; border: 1px solid #E6DB55; background-color:#FFFFE0;padding: 5px;}
+.widget .ft{z-index: 900;text-decoration: none; display:none;}
+/*.widget .hd a:hover{background-position:0 -16px;}
+.widget .hd .icon a:active{background-position:0 -32px;}
+
+.widget .bd{}*/

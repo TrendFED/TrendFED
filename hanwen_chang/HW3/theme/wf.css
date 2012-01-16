@@ -1,0 +1,21 @@
+/* common */
+.clearfix{zoom:1;}
+.clearfix:after{content:'.';display:block;clear:both;visibility:hidden;height:0;font-size:0;}
+
+/* #container */
+#container{padding:20px;width:500px;}
+
+/* .widget */
+.widget{border:1px solid #999;border-radius:7px;box-shadow:2px 2px 2px #999;}
+.widget .hd{border-radius:7px;border-bottom-left-radius:0;border-bottom-right-radius:0;padding:5px 10px;border-bottom:1px solid #999;background:url(images/bg_title.jpg) top repeat-x #efefef;}
+.widget .hd .title{float:left;font-weight:bold;}
+.widget .hd .icon{float:right;}
+.widget .hd .icon .button{float:left;margin:0 0 0 5px;width:16px;height:16px;}
+.widget .hd .icon .setting{background:url(images/icon_setting.png) 0 0 no-repeat;}
+.widget .hd .icon .refresh{background:url(images/icon_refresh.png) 0 0 no-repeat;}
+.widget .hd .icon .help{background:url(images/icon_help.png) 0 0 no-repeat;}
+.widget .hd .icon .close{background:url(images/icon_close.png) 0 0 no-repeat;}
+.widget .hd .icon a:hover{background-position:0 -16px;}
+.widget .hd .icon a:active{background-position:0 -32px;}
+
+.widget .bd{}

@@ -1,0 +1,26 @@
+/* comPager */
+.comPager{float:right;height:26px;margin:0px;padding-right:10px;vertical-align:middle;}
+.comPager li{float:left;font-family:Arial, Helvetica, sans-serif;font-size:11px;font-weight:normal;height:26px;margin-left:2px;line-height:26px;}
+.comPager .mozilla .pager .pageInput, .mozilla .pager .pager_per_page{line-height:25px;}
+.comPager .pageInput, .pager .pager_per_page{line-height:24px;}
+.comPager .btn{background:url(img/pager_btn.gif) no-repeat center;cursor:pointer;height:17px;margin-top:4px;width:17px;}
+.comPager .records{background: url("img/tool_panel_div.png") no-repeat right center;padding-right:10px;}
+.comPager .btn_first{background-position:0px -204px;}
+.comPager .btn.btn_first_hover{background-position:0px -221px;}
+.comPager .btn_first.disabled{background-position:0px -255px;cursor: default;}
+.comPager .btn.btn_prev{background-position:0px -68px;}
+.comPager .btn.btn_prev.disabled{background-position:0px -119px;cursor: default;}
+.comPager .btn.btn_prev_hover{background-position:0px -85px;}
+.comPager .btn_next{background-position:0px 0px;}
+.comPager .btn_next.disabled{background-position:0px -51px;cursor: default;}
+.comPager .btn_next_hover{background-position:0px -17px;}
+.comPager .btn_last{background-position:0px -136px;}
+.comPager .btn_last.disabled{background-position:0px -187px;cursor: default;}
+.comPager .btn_last_hover{background-position:0px -153px;}
+.comPager .pager_current_page{font-family:Arial, Helvetica, sans-serif;font-size:11px;font-weight:normal;height:12px;vertical-align:middle;width:25px;}
+.comPager .pager_current_page{}
+.comPager .pager_per_page{background: url("img/tool_panel_div.png") no-repeat left center;padding-left: 5px;}
+.comPager .pager_per_page select{font-family:Arial, Helvetica, sans-serif;font-size:11px;font-weight:normal;vertical-align:middle;width:50px;}
+
+
+.comTable{padding: auto, margin: auto;}
